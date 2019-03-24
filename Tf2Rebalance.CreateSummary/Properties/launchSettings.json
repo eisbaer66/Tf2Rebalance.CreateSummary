@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Tf2Rebalance.CreateSummary": {
+      "commandName": "Project",
+      "commandLineArgs": "tf2rebalance_attributes.example.txt"
+    }
+  }
+}

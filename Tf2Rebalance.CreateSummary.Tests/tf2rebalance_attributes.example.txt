@@ -1,0 +1,48 @@
+﻿"tf2rebalance_attributes"
+{	
+	"132 ; 1082 ; 482 ; 266" //Eyelander
+	{
+		"keepattribs" "1"
+		"info" "Longer deploy and holster time removed"
+		"attribute1" //Is sword
+		{
+			"id" "781"
+			"value" "0"
+		}
+		"attribute2"//Melee Range
+		{
+			"id" "246"
+			"value" "1.37"
+		}
+	}
+
+	"127"
+	{
+		// This is a "keepattribs" key. If set to 1, then the item
+		// will preserve the attributes it spawns with.
+		// If this key isn't added, or if the key is set to 0,
+		// Then all of the weapon's attributes will be removed
+		// by default, which can be useful for complete weapon remakes.
+		"keepattribs" "1"
+		
+		// This is an "info" key. Works as explained like on the
+		// classes section above, but if a player wants to see
+		// its description, they must write /official, then select
+		// its respective weapon slot.
+		"info"	"Direct Hit:\n- 25% jump height.\n- -50% less clip size."
+		
+		// Attributes can be added on weapons just like it was
+		// explained before:
+		"attribute1"
+		{
+			"id"	"326"	 // increased jump height
+			"value"	"1.25"
+		}
+		
+		"attribute2"
+		{
+			"id"	"3" 	// clip size penalty
+			"value"	"1.50"
+		}
+	}
+}

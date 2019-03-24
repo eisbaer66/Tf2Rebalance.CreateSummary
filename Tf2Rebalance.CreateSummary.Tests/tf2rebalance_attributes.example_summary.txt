@@ -1,0 +1,8 @@
+﻿Eyelander, Festive Eyelander, Nessie's Nine Iron, Horseless Headless Horsemann's Headtaker
+Longer deploy and holster time removed
+
+Direct Hit
+Direct Hit:
+- 25% jump height.
+- -50% less clip size.
+
