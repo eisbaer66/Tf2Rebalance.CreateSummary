@@ -1,0 +1,3 @@
+﻿- fix self contained deployment
+- definitions without info?
+- classes

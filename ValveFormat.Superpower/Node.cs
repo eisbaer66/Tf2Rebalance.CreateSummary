@@ -9,6 +9,7 @@ namespace ValveFormat.Superpower
         public string Name { get; set; }
         public string Value { get; set; }
         public IList<Node> Childs { get; set; }
+        public Node Parent { get; set; }
 
         public Node(string name, string value)
         {

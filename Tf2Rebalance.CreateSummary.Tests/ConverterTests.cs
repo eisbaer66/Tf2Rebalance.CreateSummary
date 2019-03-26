@@ -18,6 +18,8 @@ namespace Tf2Rebalance.CreateSummary.Tests
             {"127", "Direct Hit"},
         };
 
+        private IDictionary<string, string> _weaponNames;
+
         [TestInitialize]
         public void TestInitialize()
         {
@@ -26,16 +28,20 @@ namespace Tf2Rebalance.CreateSummary.Tests
                 .WriteTo.Console()
                 .Enrich.FromLogContext()
                 .CreateLogger();
+
+            _weaponNames = AlliedModsWiki.GetWeaponNames();
         }
 
         [TestMethod]
         [DataRow("tf2rebalance_attributes.example.txt", "tf2rebalance_attributes.example_summary.txt")]
+        [DataRow("higps.txt", "higps_summary.txt")]
+        [DataRow("higps_withoutClasses.txt", "higps_withoutClasses_summary.txt")]
         public void TestMethod1(string inputFilename, string expectedOutputFilename)
         {
             string input = File.ReadAllText(inputFilename);
             string expectedOutput = File.ReadAllText(expectedOutputFilename);
 
-            Converter converter = new Converter(weaponNames);
+            Converter converter = new Converter(_weaponNames);
 
 
             string output = converter.Execute(input);

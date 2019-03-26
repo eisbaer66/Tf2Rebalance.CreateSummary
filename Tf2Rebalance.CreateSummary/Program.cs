@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Net;
-using HtmlAgilityPack;
 using Serilog;
 using Serilog.Events;
 using Serilog.Formatting.Compact;
@@ -37,7 +34,7 @@ namespace Tf2Rebalance.CreateSummary
                     args = new[] {input};
                 }
 
-                IDictionary<string, string> weaponNames = GetWeaponNamesAsync();
+                IDictionary<string, string> weaponNames = AlliedModsWiki.GetWeaponNames();
                 Converter converter = new Converter(weaponNames);
 
                 foreach (string filename in args)
@@ -64,41 +61,6 @@ namespace Tf2Rebalance.CreateSummary
             {
                 Serilog.Log.CloseAndFlush();
             }
-        }
-
-        private static IDictionary<string, string> GetWeaponNamesAsync()
-        {
-            string url = "https://wiki.alliedmods.net/Team_Fortress_2_Item_Definition_Indexes";
-
-            Log.Information("loading weaponnames from {WeaponNameDownloadUrl}", url);
-
-            WebClient client = new WebClient();
-            string html = client.DownloadString(url);
-
-            HtmlDocument document = new HtmlDocument();
-            document.LoadHtml(html);
-
-            var rows = document.DocumentNode.SelectNodes("//table")
-                .SelectMany(table => table.SelectNodes("./tr").Skip(1))
-                .Select(row =>
-                {
-                    var data = row.SelectNodes("./th|./td");
-                    if (data.Count < 2)
-                        return null;
-
-                    string id = data[0].InnerText.Trim();
-                    string name = data[1].InnerText.Trim();
-                    return new
-                    {
-                        id,
-                        name
-                    };
-                })
-                .ToLookup(x => x.id, x => x.name)
-                .ToDictionary(x => x.Key, x => x.FirstOrDefault());
-
-            Log.Information("{WeaponNameCount} weaponnames found", rows.Count);
-            return rows;
         }
 
         private static void CreateSummary(string filename, Converter converter)

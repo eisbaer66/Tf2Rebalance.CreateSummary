@@ -80,7 +80,13 @@ namespace ValveFormat.Superpower
                 Dictionary<string, object> d = (Dictionary<string, object>)p.Value;
                 List<Node> childs = GetNodes(d).ToList();
 
-                yield return new Node(p.Key, childs);
+                Node node = new Node(p.Key, childs);
+
+                foreach (Node child in childs)
+                {
+                    child.Parent = node;
+                }
+                yield return node;
             }
         }
     }

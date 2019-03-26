@@ -1,0 +1,1243 @@
+﻿"tf2rebalance_attributes"
+{	
+	//sm_cvar sv_maxvelocity 999999
+	"classes"
+	{
+		"engineer"
+		
+		{
+			
+			"info" "Reduced build and upgrade cost of teleporters by 50%"
+			"attribute1" //teleporter cost
+			{
+				"id" "790"
+				"value" "0.5"
+			}
+			
+		}
+		
+		// "medic"
+		
+		// {
+		// "info" "Medic takes less crit damage"
+		
+		// "attribute1"
+		// {
+		// "id" "62"
+		// "value" "0.90"
+		// }
+		// }
+		// "spy"
+		// {
+		// "attribute1"
+		
+		// "id" "211"
+		// "value" "10000"
+		
+		// }
+	}
+	
+
+	
+	/////////////// April Fools ///////////////////////////
+	
+	//Attribute 280;
+	// 1 - Bullet
+	// 2 - Rocket
+	// 3 - Pipebomb
+	// 4 - Stickybomb (Stickybomb Launcher)
+	// 5 - Syringe
+	// 6 - Flare
+	// 8 - Arrow Huntsman
+	// 11 - Arrow Crusader's Crossbow
+	// 12 - Cow Mangler Particle
+	// 13 - Righteous Bison Particle
+	// 14 - Stickybomb (Sticky Jumper)
+	
+	// SCOUT
+	
+	//MELEE
+	
+	"349" //Sun on a stick
+	{
+		"keepattribs" "0"
+		"info" "increased dmg to people on fire by 100%"
+		"attribute1"//dmg bonus vs burning
+		{
+			"id" "795"
+			"value" "2"
+		}
+
+
+	}
+	
+	//PYRO
+	
+	"21 ; 208 ; 659 ; 798 ; 807 ; 887 ; 896 ; 905 ; 914 ; 963 ; 972  30474" //Flamethrower
+	{
+		"keepattribs" "1"
+		"info" "pyro"
+		"attribute1" //life steal
+		{
+			"id" "16"
+			"value" "10"
+		}
+		
+
+	}
+	///SNIPER
+	
+	//MAIN WEAPONS
+	"14 ; 201 ; 664 ; 792 ; 801 ; 851 ; 881 ; 890 ; 899 ; 908 ; 957 ; 966 ; 1098 ; 15000 ; 15007 ; 15019 ; 15023 ; 15033 ; 15059 ; 15070 ; 15071 ; 15072 ; 15111 ; 15112 ; 15135 ; 15136 ; 15154 ; 30665" //Sniper Rifles
+	{
+		"keepattribs" "1"
+		
+		"info" "now shoots rockets instead of bullets" 
+		
+		"attribute1" //projectile overried
+		{
+			"id" "280"
+			"value" "2"
+		}
+		
+		"attribute2" //projectile speed
+		{
+			"id" "103"
+			"value" "2.5"
+		}
+	}
+	
+	"230"//Sydney Sleeper
+	{
+		"keepattribs" "1"
+		"info" "All shots penetrates"
+		"attribute1"
+		{
+			"id" "266"
+			"value" "1"
+		}
+	}
+	
+	"402" //Bazaar Bargaom
+	{
+		"keepattribs" "1"
+		"info" "added 30% more headshot damage"
+		
+		
+		"attribute1"//headshot damage
+		{
+			"id" "390"
+			"value" "1.3"
+		}
+	}
+	
+	"752" //Hitman's heatmaker
+	{
+		"keepattribs" "1"
+		
+		"info" "Now drops arrows and you can jump real high and run real fast, giving Sniper an alternative playstyle"
+		
+		"attribute1" //firing speed
+		{
+			"id" "6"
+			"value" "0.05"
+		}
+		"attribute2" //projectile overried
+		{
+			"id" "280"
+			"value" "8"
+		}
+		"attribute3"//movespeed
+		{
+			"id" "851"
+			"value" "10"
+		}
+		"attribute4" //Jump height
+		{
+			"id" "326"
+			"value" "3"
+		}
+		"attribute5"//Clip size
+		{
+			"id" "37"
+			"value" "10"
+		}
+		
+	}
+	
+	"56 ; 1005 ; 1092" //Huntsman
+	{
+		"keepattribs" "1"
+		
+		"info" "arrows so fast they are bullets"
+		
+		"attribute1" //projectile overried
+		{
+			"id" "280"
+			"value" "1"
+		}
+	}
+	
+	"526 ; 30665" //Machina
+	{
+		"keepattribs" "1"
+		"info" "Increased fully charged damage bonus a little bit, but careful as it now HEALS ENEMY BUILDINGS!\nBecause NoFungineer figured out how to get heal with bullets"
+		
+		"attribute1"//faster firing speed
+		{
+			"id" "304"
+			"value" "20.00222222222222"
+		}
+		"attribute2" //heal buildings
+		{
+			"id" "137"
+			"value" "-1"
+		}
+		// "attribute3" //See enemy health
+		// {
+		// "id" "269"
+		// "value" "1"
+		// }
+	}
+	
+	//SECONDARY
+	
+	"16 ; 1149 ; 203 ; 15001 ; 15022 ; 15032 ; 15037 ; 15058 ; 15076 ; 15110 ; 15134 ; 15153" //SMG
+	{
+		"keepattribs" "1"
+		
+		"info" "is now the minigun"
+		
+		"attribute1"//one clip
+		{
+			"id" "301"
+			"value" "1"
+		}
+		"attribute2" //200 CLIP
+		{
+			"id" "4"
+			"value" "8"
+		}
+	}
+	
+	"58 ; 1083 ; 1105 ; 222 ; 1121 ; 1180"//Jarate & Milk & Gas Passer
+	{
+		"keepattribs" "1"
+		
+		"info" "sniper has to piss a lot so recharge is fast and throws fast too"
+		
+		"attribute1" //instante refill
+		{
+			"id" "278"
+			"value" "0.001"
+		}
+
+		"attribute2"//faster firing speed
+		{
+			"id" "6"
+			"value" "0.25"
+		}
+		"attribute3"//recharge for gas passer
+		{
+			"id" "874"
+			"value" "0.001"
+		}
+	}
+	
+	"57" //Razorback
+	{
+		"keepattribs" "1"
+		
+		"info" "can't get killed by backstabs unless the spy uses the fast knife"
+		
+		"attribute1" //recharge instant
+		{
+			"id" "874"
+			"value" "0.001"
+		}
+	}
+	"231"//Darwin danger shield
+	{
+		"keepattribs" "1"
+		
+		"info" "100% resistance to afterburn"
+		
+		// "attribute1" //fire retardant
+		// {
+		// "id" "53"
+		// "value" "1"
+		// }
+
+		"attribute1" //Fire resist
+		{
+			"id" "60"
+			"value" "0"
+		}
+		
+	}
+	
+	"642" //Cozy Camper
+	{
+		"keepattribs" "1"
+		"info" "self heal increased to 25 pr second"
+		"attribute1" //regen
+		{
+			"id" "57"
+			"value" "100"
+		}
+	}
+	
+	"751" //Cleaners carbine
+	{
+		"keepattribs" "1"
+		"info" "increased minicrit duration to 60 seconds"
+		"attribute1"
+		{
+			"id" "779"
+			"value" "60"
+		}
+
+	}
+	
+	"171"//Tribalman's Shiv
+	{
+		"keepattribs" "1"
+		"info" "on hit bleed for 30 seconds ya bloody bleeder!"
+		
+		"attribute1"//Bleed for 30
+		{
+			"id" "149"
+			"value" "30"
+		}
+	}
+	
+	"232" //Bushwacka
+	{
+		"keepattribs" "1"
+		"info" "speed boost on kill so its easier to chain"
+		
+		"attribute1"
+		{
+			"id" "736"
+			"value" "3"
+		}
+	}
+	
+	"401" //Shanahsah
+	{
+		"keepattribs" "1"
+		"info" "90% less dmg while half alife, 100% dmg bonus while half dead"
+		
+		"attribute1" //Half Alive
+		{
+			"id" "225"
+			"value" "0.1"
+		}
+
+		"attribute2" //half dead
+		{
+			"id" "224"
+			"value" "2"
+		}
+	}
+	
+
+
+	
+	//HEAVY	
+	
+	//PRIMARY
+
+	"15 ; 202 ; 654 ; 793 ; 802 ; 882 ; 891 ; 900 ; 909 ; 958 ; 967 ; 298 ; 15004 ; 15020 ; 15026 ; 15031 ; 15040 ; 15055 ; 15086 ; 15087 ; 15088 ; 15098 ; 15099 ; 15123 ; 15124 ; 15125 ; 15147" //Miniguns
+	{
+		"keepattribs" "1"
+		
+		"info" "now heals on hit"
+		
+		"attribute1"//heal on hit
+		{
+			"id" "16"
+			"value" "2"
+		}
+		// "attribute2" //projectile speed
+		// {
+		// "id" "103"
+		// "value" "0.1"
+		// }
+	}
+	
+	"41"//Natascha
+	
+	{
+		"keepattribs" "1"
+		"info" "slows the enemy more"
+		"attribute1"//slow enemy
+		{
+			"id" "32"
+			"value" "10000"
+		}
+	}
+	
+	"312" //Brass Beast
+	{
+		"keepattribs" "1"
+		"info" "more bullets, more spread"
+		
+		"attribute1" //more bullets
+		{
+			"id" "45"
+			"value" "5"
+		}
+		
+		"attribute2" //spread penalty
+		{
+			"id" "36"
+			"value" "6"
+		}
+	}
+	
+	"424" //tomislav
+	{
+		"keepattribs" "1"
+		"info" "more accurate and more faster"
+		"attribute1" //faster movespeed while spun up
+		{
+			"id" "183"
+			"value" "10"
+		}
+		// "attribute2" //accurate
+		// {
+		// "id" "106"
+		// "value" "0"
+		// }
+	}
+	
+	" 811 ; 832" //huo-long heater
+	{
+		"keepattribs" "1"
+		"info" "crits against dudeson fire"
+		"attribute1"
+		{
+			"id" "20"
+			"value" "1"
+		}
+	}
+	
+	//SECONDARY
+	
+	"42 ; 863 ; 1002" //Sandwiches
+	{
+		"keepattribs" "1"
+		"info" "Healing increased while eating"
+		"attribute1"//more heal from eating
+		{
+			"id" "876"
+			"value" "1000"
+		}
+	}
+
+	"159 ; 433 ; 1190"//Dalokohs , Fishcake, Second banana
+	{
+		"keepattribs" "1"
+
+		"info" "now can switch to and throw faster"
+		"attribute1"//recharge for meter
+		{
+			"id" "874"
+			"value" "0.01"
+		}
+		"attribute2"//deploys faster
+		{
+			"id" "547"
+			"value" "0.01"
+		}
+	}
+
+	"311"//Steak
+	{
+		"keepattribs" "1"
+		"info" "instead of taking more dmg, you take like 70% less"
+		"attribute1"//less dmg when having eaten steak
+		{
+			"id" "798"
+			"value" "0.3"
+		}
+	}
+
+	"425"//Family Business
+	{
+		"keepattribs" "1"
+		"info" "Is now scattergun and fat scout, you give up your primary for this"
+		"attribute1"// More clip
+		{
+			"id" "4"
+			"value" "1"
+		}
+		"attribute2" //Faster shooty
+		{
+			"id" "6"
+			"value" "1"
+		}
+		"attribute3" //Less damage
+		{
+			"id" "2"
+			"value" "1.4"
+		}
+		"attribute4" // Jump Height
+		{
+			"id" "326"
+			"value" "1.4"
+		}
+		"attribute5" // Speedboost
+		{
+			"id" "107"
+			"value" "1.739130434782609"
+		}
+		// "attribute6" //When weapon is active
+		// {
+		// "id" "128"
+		// "value" "1"
+		// }
+		"attribute6" //Health
+		{
+			"id" "125"
+			"value" "-175"
+		}
+		"attribute7" //increase air control
+		{
+			"id" "610"
+			"value" "3"
+		}
+		"attribute8" //Max primary ammo reduced
+		{
+			"id" "77"
+			"value" "0"
+		}
+	}
+
+
+
+
+	"1153"//Panic Attack
+	{
+		"keepattribs" "1"
+		"info" "Less damage, faster shooting, always accurate"
+
+		"attribute1"//Successive shots less accurate
+		{
+			"id" "808"
+			"value" "0"
+		}
+		"attribute2"//Firing speed
+		{
+			"id" "6"
+			"value" "0.1"
+		}
+		"attribute3" //Less damage
+		{
+			"id" "2"
+			"value" "0.6"
+		}
+	}
+
+	//MELEE
+
+	"43" //Killing gloves of boxing
+	{
+		"keepattribs" "1"
+		"info" "Crits last 15 seconds longer"
+		"attribute1"
+		{
+			"id" "31"
+			"value" "15"
+		}
+	}
+
+	"239 ; 1100" //GRU Bread bite
+	{
+		"keepattribs" "1"
+		"info" "Run faster and drain health faster"
+		"attribute1"//Max health drained
+		{
+			"id" "855"
+			"value" "200"
+		}
+	}
+
+	"426"//Eviction Notice
+	{
+		"keepattribs" "1"
+		"info" "On hit gain 15 second speed bost"
+		"attribute1"//Speedboost
+		{
+			"id" "737"
+			"value" "15"
+		}
+	}
+
+	"310" //Warrior's Spirit
+	{
+		"keepattribs" "1"
+		"info" "Stronger punches makes enemies go bye bye"
+
+		"attribute1" //Damage
+		{
+			"id" "215"
+			"value" "500"
+		}
+		"attribute2" //Slower firing speed
+		{
+			"id" "216"
+			"value" "1000"
+		}
+	}
+
+	"656" //Holiday Punch
+	{
+		"keepattribs" "1"
+		"info" ""
+		"attribute1"//crits deal damage
+		{
+			"id" "363"
+			"value" "0"
+		}
+		"attribute2"
+		{
+			"id" "869"
+			"value" "1"
+		}
+
+	}
+
+	////DEMOMAN
+
+	//PRIMARY
+
+	"15077 ; 15079 ; 15091 ; 15092 ; 15116 ; 15117 ; 15142 ; 15158 ; 19 ; 206 ; 1007" //Grenade Launchers
+	{
+		"keepattribs" "1"
+		"info" "Has 5 in clip"
+
+		"attribute1" //Clip size
+		{
+			"id" "4"
+			"value" "1.25"
+		}
+
+	}
+
+	"308" //Loch-n-load
+	{
+		"keepattribs" "1"
+		"info" "Only has 2 clip, shoots 2 at the time, no longer shatters"
+
+		"attribute1"//Clip size
+		{
+			"id" "4"
+			"value" "0.75"
+		}
+		"attribute2"//faster firing speed 
+		{
+			"id" "5"
+			"value" "0.25"
+		}
+
+		"attribute3" //Shatter
+		{
+			"id" "127"
+			"value" "0"
+		}
+
+	}
+
+	"996" //Loose cannon
+	{
+		"keepattribs" "1"
+		"info" "Increased pushback slightly"
+
+		"attribute1" //Pushback
+		{
+			"id" "791"
+			"value" "3000"
+		}
+	}
+
+	"1151" //Iron Bomber
+	{
+		"keepattribs" "1"
+		"info" "Slightly shorter fuse time"
+		"attribute1"
+		{
+			"id" "787"
+			"value" "0.25"
+		}
+	}
+
+	"405 ; 608" //Wee booties boot legger
+	{
+		"keepattribs" "0"
+		"info" "More health, faster moving speed and better turn control and better refill"
+		"attribute1"//More health
+		{
+			"id" "26"
+			"value" "50"
+		}
+		"attribute2" //turn control
+		{
+			"id" "246"
+			"value" "10"
+		}
+		"attribute3" //movespeed while shield
+		{
+			"id" "788"
+			"value" "1.75"
+		}
+	}
+
+	"1101" //BASE JUMPER
+	{
+		"keepattribs" "1"
+		"info" "Jump height increased by 200%"
+
+		"attribute1"//Air control
+		{
+			"id" "326"
+			"value" "2"
+		}
+	}
+
+	//SECONDARY
+
+	"15009 ; 15012 ; 15024 ; 15038 ; 15045 ; 15048 ; 15082 ; 15083 ; 15084 ; 15113 ; 15137 ; 15138 ; 15155 ; 661 ; 797 ; 806 ; 886 ; 895 ; 904 ; 913 ; 962 ; 971 ; 20 ; 207"//Sticky bombs
+	{
+		"keepattribs" "1"
+		"info" "Can have 24 bombs out"
+		"attribute1" //More bombs out
+		{
+			"id" "88"
+			"value" "24"
+		}
+	}
+
+	"130" //Scottish
+	{
+		"keepattribs" "1"
+		"info" "Can have 40 bombs out"
+
+		"attribute1" //More bombs out
+		{
+			"id" "88"
+			"value" "32"
+		}
+	}
+
+	"1150" //Quickie Bomb Launcher
+	{
+		"keepattribs" "1"
+		"info" "Instant arm time"
+
+		"attribute1" //faster arm time
+		{
+			"id" "126"
+			"value" "-100"
+		}
+	}
+
+	"265"//Sticky Jumper
+	{
+		"keepattribs" "1"
+		"info" "Faster firing speed, more bombs out, faster reload"
+		
+		"attribute1" //More bombs out
+		{
+			"id" "88"
+			"value" "32"
+		}
+		"attribute2" //Faster firing speed 
+		{
+			"id" "6"
+			"value" "0.25"
+		}
+		"attribute3" //Reload speed
+		{
+			"id" "97"
+			"value" "0.25"
+		}
+	}
+
+	"131 ; 1144" //Chargin' Targe
+	{
+		"keepattribs" "1"
+		"info" "3 seconds Longer charge duration"
+		"attribute1"//Charge duration
+		{
+			"id" "202"
+			"value" "3"
+		}
+	}
+
+
+	"406" //Splendid Screen
+	{
+		"keepattribs" "1"
+		"info" "6 seconds longer charge time"
+		"attribute1" //Charge Damage
+		{
+			"id" "202" //longer charge time
+			"value" "6"
+		}
+	}
+
+	"1099" //Tide Turner
+	{
+		"keepattribs" "1"
+		"info" "9 seconds longer charge time, taking damage no longer reduces charge time"
+		"attribute1"
+		{
+			"id" "202" // longer charge time
+			"value" "9"
+		}
+		"attribute2" // losing charge time on damage
+		{
+			"id" "676"
+			"value" "0"
+		}
+	}
+
+	//MELEE
+
+	"132 ; 1082 ; 482 ; 266" //Eyelander
+	{
+		"keepattribs" "1"
+		"info" "Longer deploy and holster time removed"
+		"attribute1" //Is sword
+		{
+			"id" "781"
+			"value" "0"
+		}
+		"attribute2"//Melee Range
+		{
+			"id" "246"
+			"value" "1.37"
+		}
+	}
+
+	"172 ; 327 ; 404 ; 357" //Skull cutter , Claid,  Persian, Half Zatoichi
+	{
+		"keepattribs" "1"
+		"info" "Longer deploy and holster time removed"
+		"attribute1" //Is sword
+		{
+			"id" "781"
+			"value" "0"
+		}
+		"attribute2"//Melee Range
+		{
+			"id" "246"
+			"value" "1.37"
+		}
+	}
+
+	"154" // Paintrain
+	{
+		"keepattribs" "1"
+		"info" "You now capture at 3x"
+
+		"attribute1" //Capture rate
+		{
+			"id" "68"
+			"value" "2"
+		}
+	}
+
+	"307" //Ullapool Caber
+	{
+		"keepattribs" "1"
+		"info" "Always crits and kills yourself"
+		
+		"attribute1" //Always crit
+		{
+			"id" "15"
+			"value" "100"
+		}
+		"attribute2" //self dmg increase
+		{
+			"id" "207"
+			"value" "1000"
+		}
+	}
+
+
+	//SOLDIER
+
+	//PRIMARY
+
+	"18 ; 205 ; 127 ; 228 ; 237 ; 414 ; 441 ; 513 ; 658 ; 730 ; 800 ; 809 ; 889 ; 898 ; 907 ; 916 ; 965 ; 974 ; 1085 ; 1104 ; 15006 ; 15014 ; 15028 ; 15043 ; 15052 ; 15057 ; 15081 ; 15104 ; 15105 ; 15129 ; 15130 ; 15150"
+	{
+		"keepattribs" "1"
+		"info" "You can now rocketjump higher"
+		"attribute1"//More self push force taken
+		{
+			"id" "58"
+			"value" "2"
+		}
+	}
+
+	//SECONDARY
+
+	"415" //Reserve Shooter
+	{
+		"keepattribs" "1"
+		"info" "Is now a anti aircraft rifle, crits instead of minicrit, 100% accurate, 1 clip size"
+		"attribute1" //Crits when minicritting
+		{
+			"id" "179"
+			"value" "1"
+		}
+		"attribute2" //accurate
+		{
+			"id" "106"
+			"value" "0"
+		}
+		"attribute3"//clip size penalty
+		{
+			"id" "4"
+			"value" "0.25"
+		}
+	}
+
+	"442" // Righteous Bison
+	{
+		"keepattribs" "1"
+		"info" "Faster lazers"
+		"attribute1" //projectile overried
+		{
+			"id" "6"
+			"value" "0.1"
+		}
+
+	}
+
+	"129 ; 1001 ; 226 ; 354" //Buff Banner, Battalions Backup , Concheror
+	{
+		"keepattribs" "1"
+		"info" "Now lasts 3 as long"
+
+		"attribute1" //Damage
+		{
+			"id" "319"
+			"value" "3"
+		}
+
+	}
+
+	"133" //Gunboats
+	{
+		"keepattribs" "1"
+		"info" "25% Faster move speed for faster and longer rocket jumps!"
+		"attribute1"//More self push force taken
+		{
+			"id" "107"
+			"value" "1.25"
+		}
+	}
+
+	"444" //Mantreads
+	{
+		"keepattribs" "1"
+		"info" "Better air control"
+		"attribute1"
+		{
+			"id" "138"
+			"value" "10000"
+		}
+	}
+
+	//Melee
+
+	"128" //Equalizer
+	{
+		"keepattribs" "1"
+		"info" "You can get even more overheal as soldier!"
+		"attribute1"
+		{
+			"id" "853"
+			"value" "1.50"
+		}
+	}
+
+	"775" //Escape plan
+	{
+		"keepattribs" "1"
+		"info" "4 times the healing from medics when active!"
+		"attribute1" //Provide on active off
+		{
+			"id" "740"
+			"value" "4"
+		}
+
+	}
+
+	"447"// Disciplinary Action
+	{
+		"keepattribs" "1"
+		"info" "Faster whips, less dmg"
+		"attribute1" //faster firing speed
+		{
+			"id" "6"
+			"value" "0.25"
+		}
+		"attribute2" //less damage
+		{
+			"id" "1"
+			"value" "0.25"
+		}
+	}
+
+	"416" //Market Gardner
+	{
+		"keepattribs" "1"
+		"info" "Melee Range Increased a bit"
+		"attribute1" //Melee range
+		{
+			"id" "264"
+			"value" "5"
+		}
+		"attribute2" //Laugh when you get the kill
+		{
+			"id" "409"
+			"value" "1"
+		}
+	}
+	
+	
+	//SCOUT 
+
+	//PRIMARY
+
+	"13 ; 200 ; 669 ; 799 ; 808 ; 888 ; 897 ; 906 ; 915 ; 964 ; 973 ; 15002 ; 15015 ; 15021 ; 15029 ; 15036 ; 15053 ; 15065 ; 15069 ; 15106 ; 15107 ; 15108 ; 15151 ; 15157 ; 15131" //Scattergun; 
+	{
+		"keepattribs" "1"
+		"info" "Speedboost on hit!"
+		"attribute1"
+		{
+			"id" "737"
+			"value" "1"
+		}
+	}
+	
+	"45" //Force-a-nature
+	{
+		"keepattribs" "1"
+		"info" "wowzers"
+		
+		"attribute1" //Pushback
+		{
+			"id" "791"
+			"value" "4000"
+		}
+	}
+	
+	"220" //Shortstop
+	{
+		"keepattribs" "1"
+		"info" "Increased damage, but take slightly more pushback"
+		
+		"attribute1" //more pushback
+		{
+			"id" "536"
+			"value" "100"
+		}
+		"attribute2" //faster firing speed
+		{
+			"id" "6"
+			"value" "0.25"
+		}
+	}
+	
+	"448" //Soda Popper
+	{
+		"keepattribs" "1"
+		"info" "Less Clip, faster reload"
+		"attribute1" //Clip size
+		{
+			"id" "3"
+			"value" "0.1"
+		}
+		"attribute2" // Reload time
+		{
+			"id" "97"
+			"value" "0.15"
+		}
+	}
+
+	"1103" //Back Scatter
+	{
+		"keepattribs" "1"
+		"info" "Crits when it would minicrit"
+		"attribute1"
+		{
+			"id" "179"
+			"value" "1"
+		}
+	}
+	
+	"772" //Baby face's blaster
+	{
+		"keepattribs" "1"
+		"info" "No longer lose hype, build hype by jumping and keep it forever"
+		"attribute1" //Hype reset on jump
+		{
+			"id" "419"
+			"value" "-1"
+		}
+
+		"attribute2" //Hype reduced on hit
+		{
+			"id" "733"
+			"value" "-1"
+		}
+	}
+
+
+
+	///////////////////////// STOCK WEAPONS /////////////////////////
+	
+	"2 ; 192" //fire axe
+	
+	{
+		"info" "Added:Reveals disguised victim on hit\n10 max health added"
+		"keepattribs" "0"
+		
+		"attribute1" //Reveal disguised victim on hit
+		{
+			"id" "340"
+			"value" "1"
+		}
+		
+		"attribute2" //max health
+		{	
+			"id" "26"
+			"value" "10"
+		}
+
+	}
+	
+	"5 ; 195; 587" // fists
+	
+	{
+		"info" "20% faster weapon switch"
+		"attribute1" //weapon switch
+		{
+			"id" "178"
+			"value" "0.80"
+		}
+		
+
+	}
+	
+	"8 ; 198; 1143" // bonesaw
+	
+	{
+		"info" "Now adds 10 seconds of bleed"
+		"attribute1" //bleed 
+		{
+			"id" "149"
+			"value" "10"
+		}
+	}
+	
+	"6 ; 196" //shovel
+	
+	{
+		"Info" "Added: Mini-crits from the back"
+		"attribute1" //hitting in back minicrits
+		{
+			"id" "619"
+			"value" "1"
+		}
+	}
+	
+
+	
+
+	
+
+	
+	
+	
+
+	
+
+
+
+
+
+	///////////////////////// NEW WEAPONS /////////////////////////
+
+	// "513" //Original - suggested by Solar
+	// {
+	// "info" "New stats:\n No clip\n150% slower deploy speed\n No ammo from dispensers\n30% more damage falloff on explosion radius (meaning you do less damage on the edges of the explosion)\nDeals 20% less damage to buildings\n+35% damage to self"
+	// "keepattribs" "1"
+
+	// "attribute1" //no reload
+	// {
+	// "id" "303"
+	// "value" "-1"
+	// }
+
+	// "attribute2" //damage fallof increased
+	// {
+	// "id" "117"
+	// "value" "-0.3"
+	// }
+
+	// "attribute3" // no ammo from dispensers
+
+	// {
+	// "id" "421"
+	// "value" "1"
+
+	// }
+
+	// }
+
+
+
+
+	// "237" //Rocket jumper
+	// {
+	// "info" "inverted direct hit"
+
+	// "keepattribs" "0"		
+	// "attribute1" //damage penalty
+	// {
+	// "id" "1"
+	// "value" "0.75"
+	// }
+	
+	// "attribute2" // projectile speed
+	// {
+	// "id" "104"
+	// "value" "0.2" 
+	// }
+	
+	// "attribute3" //explotion radius
+	// {
+	// "id" "99"
+	// "value" "1.7"
+	// }
+	
+	// "attribute4" //damage from rocket jumps reduced
+	// {
+	// "id" "135"
+	// "value" "0.75"
+	
+	// }
+	
+	// }
+
+
+
+
+}

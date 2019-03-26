@@ -12,6 +12,18 @@ namespace Tf2Rebalance.CreateSummary
         private static ILogger Log = Serilog.Log.ForContext<Converter>();
 
         private readonly IDictionary<string, string> _weaponNames;
+        private readonly IDictionary<string, string> _classNames = new Dictionary<string, string>
+        {
+            { "scout", "Scout" },
+            { "soldier", "Soldier" },
+            { "pyro", "Pyro" },
+            { "demoman", "Demoman" },
+            { "heavy", "Heavy" },
+            { "engineer", "Engineer" },
+            { "medic", "Medic" },
+            { "sniper", "Sniper" },
+            { "spy", "Spy" },
+        };
 
         public Converter(IDictionary<string, string> weaponNames)
         {
@@ -20,8 +32,6 @@ namespace Tf2Rebalance.CreateSummary
 
         public string Execute(string input)
         {
-            StringBuilder stringBuilder = new StringBuilder();
-
             IList<Node> definitionNodes;
             string error;
             Position position;
@@ -35,47 +45,50 @@ namespace Tf2Rebalance.CreateSummary
                 Log.Error("no data found in input");
                 return null;
             }
-            if (definitionNodes.Count > 1)
-            {
-                Log.Error("multiple root-nodes found in input");
-                return null;
-            }
 
-            Node root = definitionNodes[0];
-            if (root.Name != "tf2rebalance_attributes")
-            {
-                Log.Error("found root-node {ActualRootName} but excpected {ExpectedRootName}", root.Name, "tf2rebalance_attributes");
-                return null;
-            }
+            var stringBuilder = FindItemNodes(definitionNodes)
+                .Select(i => new
+                {
+                    heading = CreateHeading(i.Parent.Name),
+                    info = i.Value.Replace("\n", "\r\n"),
+                })
+                .Aggregate(new StringBuilder(), (sb, x) =>
+                {
+                    sb.AppendLine(x.heading);
+                    sb.AppendLine(x.info);
+                    sb.AppendLine();
 
-            foreach (Node definitionNode in root.Childs)
-            {
-                string heading = CreateHeading(definitionNode);
-                string info = CreateInfo(definitionNode);
-
-                stringBuilder.AppendLine(heading);
-                stringBuilder.AppendLine(info);
-                stringBuilder.AppendLine();
-            }
+                    return sb;
+                });
 
             return stringBuilder.ToString();
         }
 
-        private static string CreateInfo(Node definitionNode)
+        private IEnumerable<Node> FindItemNodes(IEnumerable<Node> nodes)
         {
-            Node infoNode = definitionNode.Childs.FirstOrDefault(n => n.Name == "info");
-            string info = infoNode.Value;
-            info = info.Replace("\n", "\r\n");
-            return info;
+            foreach (Node node in nodes)
+            {
+                if (node.Name.ToLowerInvariant() == "info")
+                {
+                    yield return node;
+                }
+
+                if (node.Childs == null)
+                    continue;
+
+                foreach (Node childNode in FindItemNodes(node.Childs))
+                {
+                    yield return childNode;
+                }
+            }
         }
 
-        private string CreateHeading(Node definitionNode)
+        private string CreateHeading(string text)
         {
-            string key = definitionNode.Name;
-            var weaponNames = key.Split(';')
+            var weaponNames = text.Split(';')
                 .Select(s => s.Trim())
-                .Where(id => _weaponNames.ContainsKey(id))
-                .Select(id => _weaponNames[id])
+                .Select(id => _weaponNames.ContainsKey(id.ToLowerInvariant()) ? _weaponNames[id]: id)
+                .Select(id => _classNames.ContainsKey(id.ToLowerInvariant()) ? _classNames[id]: id)
                 .ToList();
 
             string heading = string.Join(", ", weaponNames);
