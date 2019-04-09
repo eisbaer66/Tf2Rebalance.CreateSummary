@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -12,6 +13,8 @@ namespace Tf2Rebalance.CreateSummary
 
     public abstract class RebalanceInfoFormaterBase : IRebalanceInfoFormater
     {
+        private string _slotPattern = @"\[Slot (\d)\]";
+
         public string Create(IEnumerable<RebalanceInfo> infos)
         {
             var groupings = infos
@@ -34,7 +37,10 @@ namespace Tf2Rebalance.CreateSummary
                     {
                         string slot = weapons.Key.slot;
                         if (!string.IsNullOrEmpty(slot))
+                        {
+                            slot = Regex.Replace(slot, _slotPattern, string.Empty);
                             WriteSlot(slot);
+                        }
 
                         var groupedWeapons = weapons.GroupBy(x => x.info)
                             .Select(g =>
@@ -66,7 +72,7 @@ namespace Tf2Rebalance.CreateSummary
         {
             if (slot == null)
                 return string.Empty;
-            Match match = Regex.Match(slot, @"\[Slot (\d)\]");
+            Match match = Regex.Match(slot, _slotPattern);
             if (match == null)
                 return string.Empty;
             if (!match.Success)

@@ -4,7 +4,7 @@ pyro
 
 Weapons
 Demoman
-Melee [Slot 2]
+Melee 
 The Eyelander, Festive Eyelander, Nessie's Nine Iron, Horseless Headless Horsemann's Headtaker, The Scotsman's Skullcutter, The Claidheamh Mòr, The Persian Persuader, The Half-Zatoichi
 Longer deploy and holster time removed
 
@@ -14,7 +14,7 @@ You now capture at 3x
 Ullapool Caber
 Always crits and kills yourself
 
-Primary [Slot 0]
+Primary 
 Ali Baba's Wee Booties, The Bootlegger
 More health, faster moving speed and better turn control and better refill
 
@@ -33,7 +33,7 @@ Only has 2 clip, shoots 2 at the time, no longer shatters
 The Loose Cannon
 Increased pushback slightly
 
-Secondary [Slot 1]
+Secondary 
 Sticky Jumper
 Faster firing speed, more bombs out, faster reload
 
@@ -56,12 +56,12 @@ The Tide Turner
 9 seconds longer charge time, taking damage no longer reduces charge time
 
 Engineer
-Primary [Slot 0]
+Primary 
 Panic Attack
 Less damage, faster shooting, always accurate
 
 Heavy
-Melee [Slot 2]
+Melee 
 Fists, Fists (Renamed/Strange), Apoco-Fists
 20% faster weapon switch
 
@@ -80,7 +80,7 @@ Crits last 15 seconds longer
 Warrior's Spirit
 Stronger punches makes enemies go bye bye
 
-Primary [Slot 0]
+Primary 
 Minigun, Minigun (Renamed/Strange), Festive Minigun, Silver Botkiller Minigun Mk.I, Gold Botkiller Minigun Mk.I, Rust Botkiller Minigun Mk.I, Blood Botkiller Minigun Mk.I, Carbonado Botkiller Minigun Mk.I, Diamond Botkiller Minigun Mk.I, Silver Botkiller Minigun Mk.II, Gold Botkiller Minigun Mk.II, Iron Curtain, King of the Jungle, Iron Wood, Antique Annihilator, War Room, Citizen Pain, Brick House, Macabre Web, Pumpkin Patch, Nutcracker, Brain Candy, Mister Cuddles, Coffin Nail, Dressed to Kill, Top Shelf, Butcher Bird
 now heals on hit
 
@@ -96,7 +96,7 @@ crits against dudeson fire
 Tomislav
 more accurate and more faster
 
-Secondary [Slot 1]
+Secondary 
 Panic Attack
 Less damage, faster shooting, always accurate
 
@@ -113,25 +113,25 @@ The Family Business
 Is now scattergun and fat scout, you give up your primary for this
 
 Medic
-Melee [Slot 2]
+Melee 
 Bonesaw, Bonesaw (Renamed/Strange), Festive Bonesaw
 Now adds 10 seconds of bleed
 
-Secondary [Slot 1]
+Secondary 
 Coffin Nail
 now heals on hit
 
 Pyro
-Melee [Slot 2]
+Melee 
 Fire Axe, Fire Axe (Renamed/Strange)
 Added:Reveals disguised victim on hit
 10 max health added
 
-Primary [Slot 0]
+Primary 
 Flame Thrower, Flame Thrower (Renamed/Strange), Festive Flame Thrower, Silver Botkiller Flame Thrower Mk.I, Gold Botkiller Flame Thrower Mk.I, Rust Botkiller Flame Thrower Mk.I, Blood Botkiller Flame Thrower Mk.I, Carbonado Botkiller Flame Thrower Mk.I, Diamond Botkiller Flame Thrower Mk.I, Silver Botkiller Flame Thrower Mk.II
 pyro
 
-Secondary [Slot 1]
+Secondary 
 Gas Passer
 sniper has to piss a lot so recharge is fast and throws fast too
 
@@ -142,11 +142,11 @@ The Reserve Shooter
 Is now a anti aircraft rifle, crits instead of minicrit, 100% accurate, 1 clip size
 
 Scout
-Melee [Slot 2]
+Melee 
 Sun-on-a-Stick
 increased dmg to people on fire by 100%
 
-Primary [Slot 0]
+Primary 
 Baby Face's Blaster
 No longer lose hype, build hype by jumping and keep it forever
 
@@ -165,12 +165,12 @@ Increased damage, but take slightly more pushback
 The Soda Popper
 Less Clip, faster reload
 
-Secondary [Slot 1]
+Secondary 
 Mad Milk, Mutated Milk
 sniper has to piss a lot so recharge is fast and throws fast too
 
 Sniper
-Melee [Slot 2]
+Melee 
 The Bushwacka
 speed boost on kill so its easier to chain
 
@@ -180,7 +180,7 @@ The Shahanshah
 The Tribalman's Shiv
 on hit bleed for 30 seconds ya bloody bleeder!
 
-Primary [Slot 0]
+Primary 
 Sniper Rifle, Sniper Rifle (Renamed/Strange), Festive Sniper Rifle, Silver Botkiller Sniper Rifle Mk.I, Gold Botkiller Sniper Rifle Mk.I, The AWPer Hand, Rust Botkiller Sniper Rifle Mk.I, Blood Botkiller Sniper Rifle Mk.I, Carbonado Botkiller Sniper Rifle Mk.I, Diamond Botkiller Sniper Rifle Mk.I, Silver Botkiller Sniper Rifle Mk.II, Gold Botkiller Sniper Rifle Mk.II, The Classic, Night Owl, Purple Range, Lumber From Down Under, Shot in the Dark, Bogtrotter, Thunderbolt, Pumpkin Patch, Boneyard, Wildwood, Balloonicorn, Rainbow, Coffin Nail, Dressed to Kill, Airwolf, Shooting Star
 now shoots rockets instead of bullets
 
@@ -200,7 +200,7 @@ Because NoFungineer figured out how to get heal with bullets
 The Sydney Sleeper
 All shots penetrates
 
-Secondary [Slot 1]
+Secondary 
 Cozy Camper
 self heal increased to 25 pr second
 
@@ -220,7 +220,7 @@ The Razorback
 can't get killed by backstabs unless the spy uses the fast knife
 
 Soldier
-Melee [Slot 2]
+Melee 
 Shovel, Shovel (Renamed/Strange)
 Added: Mini-crits from the back
 
@@ -242,11 +242,11 @@ Melee Range Increased a bit
 The Pain Train
 You now capture at 3x
 
-Primary [Slot 0]
+Primary 
 Rocket Launcher, Rocket Launcher (Renamed/Strange), The Direct Hit, The Black Box, Rocket Jumper, The Liberty Launcher, The Cow Mangler 5000, The Original, Festive Rocket Launcher, The Beggar's Bazooka, Silver Botkiller Rocket Launcher Mk.I, Gold Botkiller Rocket Launcher Mk.I, Rust Botkiller Rocket Launcher Mk.I, Blood Botkiller Rocket Launcher Mk.I, Carbonado Botkiller Rocket Launcher Mk.I, Diamond Botkiller Rocket Launcher Mk.I, Silver Botkiller Rocket Launcher Mk.II, Gold Botkiller Rocket Launcher Mk.II, Festive Black Box, The Air Strike, Woodland Warrior, Sand Cannon, American Pastoral, Smalltown Bringdown, Shell Shocker, Aqua Marine, Autumn, Blue Mew, Brain Candy, Coffin Nail, High Roller's, Warhawk
 You can now rocketjump higher
 
-Secondary [Slot 1]
+Secondary 
 Gunboats
 25% Faster move speed for faster and longer rocket jumps!
 
@@ -269,7 +269,7 @@ The Righteous Bison
 Faster lazers
 
 Spy
-Secondary [Slot 0]
+Secondary 
 Coffin Nail
 You can now rocketjump higher
 

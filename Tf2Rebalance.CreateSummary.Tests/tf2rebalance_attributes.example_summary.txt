@@ -1,11 +1,11 @@
 Weapons
 Demoman
-Melee [Slot 2]
+Melee 
 The Eyelander, Festive Eyelander, Nessie's Nine Iron, Horseless Headless Horsemann's Headtaker
 Longer deploy and holster time removed
 
 Soldier
-Primary [Slot 0]
+Primary 
 The Direct Hit
 Direct Hit:
 - 25% jump height.
