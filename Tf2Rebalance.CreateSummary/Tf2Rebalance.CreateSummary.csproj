@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RtfWriter.Standard\RtfWriter.Standard.csproj" />
     <ProjectReference Include="..\ValveFormat.Superpower\ValveFormat.Superpower.csproj" />
   </ItemGroup>
 

@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tf2Rebalance.CreateSummary", "Tf2Rebalance.CreateSummary\Tf2Rebalance.CreateSummary.csproj", "{3DEFE1BC-DD4C-49C1-94FC-F929F1CC02D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf2Rebalance.CreateSummary", "Tf2Rebalance.CreateSummary\Tf2Rebalance.CreateSummary.csproj", "{3DEFE1BC-DD4C-49C1-94FC-F929F1CC02D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tf2Rebalance.CreateSummary.Tests", "Tf2Rebalance.CreateSummary.Tests\Tf2Rebalance.CreateSummary.Tests.csproj", "{28026CF3-AC82-4CE0-9638-EFA66F552A09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf2Rebalance.CreateSummary.Tests", "Tf2Rebalance.CreateSummary.Tests\Tf2Rebalance.CreateSummary.Tests.csproj", "{28026CF3-AC82-4CE0-9638-EFA66F552A09}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValveFormat.Superpower", "ValveFormat.Superpower\ValveFormat.Superpower.csproj", "{71B4A6D0-15DA-465B-A44C-CED84A6CF429}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValveFormat.Superpower.Tests", "ValveFormat.Superpower.Tests\ValveFormat.Superpower.Tests.csproj", "{6924341B-023D-4001-B27A-BF3700095058}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RtfWriter.Standard", "RtfWriter.Standard\RtfWriter.Standard.csproj", "{4A1F7183-B8EA-463A-BE1F-D7617F5BDD21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6924341B-023D-4001-B27A-BF3700095058}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6924341B-023D-4001-B27A-BF3700095058}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6924341B-023D-4001-B27A-BF3700095058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A1F7183-B8EA-463A-BE1F-D7617F5BDD21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A1F7183-B8EA-463A-BE1F-D7617F5BDD21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A1F7183-B8EA-463A-BE1F-D7617F5BDD21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A1F7183-B8EA-463A-BE1F-D7617F5BDD21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -27,13 +27,30 @@ namespace Tf2Rebalance.CreateSummary.Tests
         [DataRow("tf2rebalance_attributes.example.txt", "tf2rebalance_attributes.example_summary.txt")]
         [DataRow("higps.txt", "higps_summary.txt")]
         [DataRow("higps_withoutClasses.txt", "higps_withoutClasses_summary.txt")]
-        public void TestMethod1(string inputFilename, string expectedOutputFilename)
+        public void Text(string inputFilename, string expectedOutputFilename)
         {
             string input = File.ReadAllText(inputFilename);
             string expectedOutput = File.ReadAllText(expectedOutputFilename);
 
             Converter converter = new Converter(_itemInfos);
-            RebalanceInfoTextFormater formater = new RebalanceInfoTextFormater();
+            IRebalanceInfoFormater formater = new RebalanceInfoTextFormater();
+
+            IEnumerable<RebalanceInfo> rebalanceInfos = converter.Execute(input);
+            string output = formater.Create(rebalanceInfos);
+
+            Assert.AreEqual(expectedOutput, output);
+        }
+
+        [TestMethod]
+        [DataRow("tf2rebalance_attributes.example.txt", "tf2rebalance_attributes.example_summary.rtf")]
+        [DataRow("higps.txt", "higps_summary.rtf")]
+        public void Rtf(string inputFilename, string expectedOutputFilename)
+        {
+            string input = File.ReadAllText(inputFilename);
+            string expectedOutput = File.ReadAllText(expectedOutputFilename);
+
+            Converter converter = new Converter(_itemInfos);
+            IRebalanceInfoFormater formater = new RebalanceInfoRtfFormater();
 
             IEnumerable<RebalanceInfo> rebalanceInfos = converter.Execute(input);
             string output = formater.Create(rebalanceInfos);

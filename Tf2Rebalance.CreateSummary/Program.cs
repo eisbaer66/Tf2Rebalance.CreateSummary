@@ -36,7 +36,7 @@ namespace Tf2Rebalance.CreateSummary
 
                 IDictionary<string, List<ItemInfo>> weaponNames = AlliedModsWiki.GetItemInfos();
                 Converter converter = new Converter(weaponNames);
-                IRebalanceInfoFormater formater = new RebalanceInfoTextFormater();
+                IRebalanceInfoFormater formater = new RebalanceInfoRtfFormater();
 
                 foreach (string filename in args)
                 {
@@ -78,7 +78,8 @@ namespace Tf2Rebalance.CreateSummary
                 return;
             }
 
-            string outputFilename = filename.Replace(Path.GetFileNameWithoutExtension(filename), Path.GetFileNameWithoutExtension(filename) + "_summary");
+            //string outputFilename = filename.Replace(Path.GetFileNameWithoutExtension(filename), Path.GetFileNameWithoutExtension(filename) + "_summary");
+            string outputFilename = Path.GetFileNameWithoutExtension(filename) + "_summary.rtf";
 
             Log.Information("writing summary to {SummaryFileName}", outputFilename);
             File.WriteAllText(outputFilename, output);

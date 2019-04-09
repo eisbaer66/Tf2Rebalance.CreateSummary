@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 
 namespace Tf2Rebalance.CreateSummary
 {
-    public interface IRebalanceInfoFormater
-    {
-        string Create(IEnumerable<RebalanceInfo> infos);
-    }
-
     public abstract class RebalanceInfoFormaterBase : IRebalanceInfoFormater
     {
         private string _slotPattern = @"\[Slot (\d)\]";
@@ -83,43 +76,6 @@ namespace Tf2Rebalance.CreateSummary
                 return string.Empty;
 
             return match.Groups[1].Captures[0].Value;
-        }
-    }
-
-    public class RebalanceInfoTextFormater : RebalanceInfoFormaterBase
-    {
-        private StringBuilder _builder;
-
-        protected override void Init()
-        {
-            _builder = new StringBuilder();
-        }
-
-        protected override void WriteCategory(string text)
-        {
-            _builder.AppendLine(text);
-        }
-
-        protected override void WriteClass(string text)
-        {
-            _builder.AppendLine(text);
-        }
-
-        protected override void WriteSlot(string text)
-        {
-            _builder.AppendLine(text);
-        }
-
-        protected override void Write(RebalanceInfo weapon)
-        {
-            _builder.AppendLine(weapon.name);
-            _builder.AppendLine(weapon.info);
-            _builder.AppendLine();
-        }
-
-        protected override string Finalize()
-        {
-            return _builder.ToString();
         }
     }
 }
