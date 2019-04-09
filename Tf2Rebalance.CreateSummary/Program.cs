@@ -36,10 +36,11 @@ namespace Tf2Rebalance.CreateSummary
 
                 IDictionary<string, List<ItemInfo>> weaponNames = AlliedModsWiki.GetItemInfos();
                 Converter converter = new Converter(weaponNames);
+                IRebalanceInfoFormater formater = new RebalanceInfoTextFormater();
 
                 foreach (string filename in args)
                 {
-                    CreateSummary(filename, converter);
+                    CreateSummary(filename, converter, formater);
                 }
 
                 Log.Information("finished creating summaries for {ConfigFileCount} configs", args.Length);
@@ -63,13 +64,14 @@ namespace Tf2Rebalance.CreateSummary
             }
         }
 
-        private static void CreateSummary(string filename, Converter converter)
+        private static void CreateSummary(string filename, Converter converter, IRebalanceInfoFormater formater)
         {
             Log.Information("reading config from {ConfigFileName}", filename);
 
             string input = File.ReadAllText(filename);
 
-            string output = converter.Execute(input);
+            IEnumerable<RebalanceInfo> rebalanceInfos = converter.Execute(input);
+            string output = formater.Create(rebalanceInfos);
             if (string.IsNullOrEmpty(output))
             {
                 Log.Error("input could not be read skipping summary");

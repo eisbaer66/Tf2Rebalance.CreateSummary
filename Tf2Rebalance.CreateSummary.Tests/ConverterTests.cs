@@ -33,9 +33,10 @@ namespace Tf2Rebalance.CreateSummary.Tests
             string expectedOutput = File.ReadAllText(expectedOutputFilename);
 
             Converter converter = new Converter(_itemInfos);
+            RebalanceInfoTextFormater formater = new RebalanceInfoTextFormater();
 
-
-            string output = converter.Execute(input);
+            IEnumerable<RebalanceInfo> rebalanceInfos = converter.Execute(input);
+            string output = formater.Create(rebalanceInfos);
 
             Assert.AreEqual(expectedOutput, output);
         }
