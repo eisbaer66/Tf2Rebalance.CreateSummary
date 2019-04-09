@@ -1,12 +1,58 @@
+Classes
 Engineer
 Reduced build and upgrade cost of teleporters by 50%
 
+Weapons
+Scout
+Primary [Slot 0]
+Scattergun, Scattergun (Renamed/Strange), Festive Scattergun, Silver Botkiller Scattergun Mk.I, Gold Botkiller Scattergun Mk.I, Rust Botkiller Scattergun Mk.I, Blood Botkiller Scattergun Mk.I, Carbonado Botkiller Scattergun Mk.I, Diamond Botkiller Scattergun Mk.I, Silver Botkiller Scattergun Mk.II, Gold Botkiller Scattergun Mk.II, Night Terror, Tartan Torpedo, Country Crusher, Backcountry Blaster, Spruce Deuce, Current Event, Macabre Web, Nutcracker, Blue Mew, Flower Power, Shot to Hell, Killer Bee, Corsair, Coffin Nail
+Speedboost on hit!
+
+Force-A-Nature
+wowzers
+
+The Shortstop
+Increased damage, but take slightly more pushback
+
+The Soda Popper
+Less Clip, faster reload
+
+The Back Scatter
+Crits when it would minicrit
+
+Baby Face's Blaster
+No longer lose hype, build hype by jumping and keep it forever
+
+Secondary [Slot 1]
+Mad Milk, Mutated Milk
+sniper has to piss a lot so recharge is fast and throws fast too
+
+Melee [Slot 2]
 Sun-on-a-Stick
 increased dmg to people on fire by 100%
 
-Flame Thrower, Flame Thrower (Renamed/Strange), Festive Flame Thrower, Silver Botkiller Flame Thrower Mk.I, Gold Botkiller Flame Thrower Mk.I, Rust Botkiller Flame Thrower Mk.I, Blood Botkiller Flame Thrower Mk.I, Carbonado Botkiller Flame Thrower Mk.I, Diamond Botkiller Flame Thrower Mk.I, Silver Botkiller Flame Thrower Mk.II, 972  30474
+Pyro
+Primary [Slot 0]
+Flame Thrower, Flame Thrower (Renamed/Strange), Festive Flame Thrower, Silver Botkiller Flame Thrower Mk.I, Gold Botkiller Flame Thrower Mk.I, Rust Botkiller Flame Thrower Mk.I, Blood Botkiller Flame Thrower Mk.I, Carbonado Botkiller Flame Thrower Mk.I, Diamond Botkiller Flame Thrower Mk.I, Silver Botkiller Flame Thrower Mk.II
 pyro
 
+Secondary [Slot 1]
+Gas Passer
+sniper has to piss a lot so recharge is fast and throws fast too
+
+Panic Attack
+Less damage, faster shooting, always accurate
+
+The Reserve Shooter
+Is now a anti aircraft rifle, crits instead of minicrit, 100% accurate, 1 clip size
+
+Melee [Slot 2]
+Fire Axe, Fire Axe (Renamed/Strange)
+Added:Reveals disguised victim on hit
+10 max health added
+
+Sniper
+Primary [Slot 0]
 Sniper Rifle, Sniper Rifle (Renamed/Strange), Festive Sniper Rifle, Silver Botkiller Sniper Rifle Mk.I, Gold Botkiller Sniper Rifle Mk.I, The AWPer Hand, Rust Botkiller Sniper Rifle Mk.I, Blood Botkiller Sniper Rifle Mk.I, Carbonado Botkiller Sniper Rifle Mk.I, Diamond Botkiller Sniper Rifle Mk.I, Silver Botkiller Sniper Rifle Mk.II, Gold Botkiller Sniper Rifle Mk.II, The Classic, Night Owl, Purple Range, Lumber From Down Under, Shot in the Dark, Bogtrotter, Thunderbolt, Pumpkin Patch, Boneyard, Wildwood, Balloonicorn, Rainbow, Coffin Nail, Dressed to Kill, Airwolf, Shooting Star
 now shoots rockets instead of bullets
 
@@ -26,10 +72,11 @@ The Machina, Shooting Star
 Increased fully charged damage bonus a little bit, but careful as it now HEALS ENEMY BUILDINGS!
 Because NoFungineer figured out how to get heal with bullets
 
+Secondary [Slot 1]
 SMG, Festive SMG, SMG (Renamed/Strange), Woodsy Widowmaker, Plaid Potshotter, Treadplate Tormenter, Team Sprayer, Low Profile, Wildwood, Blue Mew, High Roller's, Blitzkrieg
 is now the minigun
 
-Jarate, Festive Jarate, The Self-Aware Beauty Mark, Mad Milk, Mutated Milk, Gas Passer
+Jarate, Festive Jarate, The Self-Aware Beauty Mark
 sniper has to piss a lot so recharge is fast and throws fast too
 
 The Razorback
@@ -44,6 +91,7 @@ self heal increased to 25 pr second
 The Cleaner's Carbine
 increased minicrit duration to 60 seconds
 
+Melee [Slot 2]
 The Tribalman's Shiv
 on hit bleed for 30 seconds ya bloody bleeder!
 
@@ -53,6 +101,8 @@ speed boost on kill so its easier to chain
 The Shahanshah
 90% less dmg while half alife, 100% dmg bonus while half dead
 
+Heavy
+Primary [Slot 0]
 Minigun, Minigun (Renamed/Strange), Festive Minigun, Silver Botkiller Minigun Mk.I, Gold Botkiller Minigun Mk.I, Rust Botkiller Minigun Mk.I, Blood Botkiller Minigun Mk.I, Carbonado Botkiller Minigun Mk.I, Diamond Botkiller Minigun Mk.I, Silver Botkiller Minigun Mk.II, Gold Botkiller Minigun Mk.II, Iron Curtain, King of the Jungle, Iron Wood, Antique Annihilator, War Room, Citizen Pain, Brick House, Macabre Web, Pumpkin Patch, Nutcracker, Brain Candy, Mister Cuddles, Coffin Nail, Dressed to Kill, Top Shelf, Butcher Bird
 now heals on hit
 
@@ -68,6 +118,7 @@ more accurate and more faster
 The Huo-Long Heater, The Huo-Long Heater (Genuine)
 crits against dudeson fire
 
+Secondary [Slot 1]
 Sandvich, Robo-Sandvich, Festive Sandvich
 Healing increased while eating
 
@@ -83,6 +134,7 @@ Is now scattergun and fat scout, you give up your primary for this
 Panic Attack
 Less damage, faster shooting, always accurate
 
+Melee [Slot 2]
 The Killing Gloves of Boxing
 Crits last 15 seconds longer
 
@@ -98,6 +150,74 @@ Stronger punches makes enemies go bye bye
 The Holiday Punch
 
 
+Fists, Fists (Renamed/Strange), Apoco-Fists
+20% faster weapon switch
+
+Medic
+Secondary [Slot 1]
+Coffin Nail
+now heals on hit
+
+Melee [Slot 2]
+Bonesaw, Bonesaw (Renamed/Strange), Festive Bonesaw
+Now adds 10 seconds of bleed
+
+Soldier
+Primary [Slot 0]
+Rocket Launcher, Rocket Launcher (Renamed/Strange), The Direct Hit, The Black Box, Rocket Jumper, The Liberty Launcher, The Cow Mangler 5000, The Original, Festive Rocket Launcher, The Beggar's Bazooka, Silver Botkiller Rocket Launcher Mk.I, Gold Botkiller Rocket Launcher Mk.I, Rust Botkiller Rocket Launcher Mk.I, Blood Botkiller Rocket Launcher Mk.I, Carbonado Botkiller Rocket Launcher Mk.I, Diamond Botkiller Rocket Launcher Mk.I, Silver Botkiller Rocket Launcher Mk.II, Gold Botkiller Rocket Launcher Mk.II, Festive Black Box, The Air Strike, Woodland Warrior, Sand Cannon, American Pastoral, Smalltown Bringdown, Shell Shocker, Aqua Marine, Autumn, Blue Mew, Brain Candy, Coffin Nail, High Roller's, Warhawk
+You can now rocketjump higher
+
+Secondary [Slot 1]
+Panic Attack
+Less damage, faster shooting, always accurate
+
+The B.A.S.E. Jumper
+Jump height increased by 200%
+
+The Reserve Shooter
+Is now a anti aircraft rifle, crits instead of minicrit, 100% accurate, 1 clip size
+
+The Righteous Bison
+Faster lazers
+
+The Buff Banner, Festive Buff Banner, The Battalion's Backup, The Concheror
+Now lasts 3 as long
+
+Gunboats
+25% Faster move speed for faster and longer rocket jumps!
+
+The Mantreads
+Better air control
+
+Melee [Slot 2]
+The Half-Zatoichi
+Longer deploy and holster time removed
+
+The Pain Train
+You now capture at 3x
+
+The Equalizer
+You can get even more overheal as soldier!
+
+The Escape Plan
+4 times the healing from medics when active!
+
+The Disciplinary Action
+Faster whips, less dmg
+
+The Market Gardener
+Melee Range Increased a bit
+
+Shovel, Shovel (Renamed/Strange)
+Added: Mini-crits from the back
+
+Engineer
+Primary [Slot 0]
+Panic Attack
+Less damage, faster shooting, always accurate
+
+Demoman
+Primary [Slot 0]
 Autumn, Macabre Web, Rainbow, Sweet Dreams, Coffin Nail, Top Shelf, Warhawk, Butcher Bird, Grenade Launcher, Grenade Launcher (Renamed/Strange), Festive Grenade Launcher
 Has 5 in clip
 
@@ -116,6 +236,7 @@ More health, faster moving speed and better turn control and better refill
 The B.A.S.E. Jumper
 Jump height increased by 200%
 
+Secondary [Slot 1]
 Sudden Flurry, Carpet Bomber, Blasted Bombardier, Rooftop Wrangler, Liquid Asset, Pink Elephant, Autumn, Pumpkin Patch, Macabre Web, Sweet Dreams, Coffin Nail, Dressed to Kill, Blitzkrieg, Festive Stickybomb Launcher, Silver Botkiller Stickybomb Launcher Mk.I, Gold Botkiller Stickybomb Launcher Mk.I, Rust Botkiller Stickybomb Launcher Mk.I, Blood Botkiller Stickybomb Launcher Mk.I, Carbonado Botkiller Stickybomb Launcher Mk.I, Diamond Botkiller Stickybomb Launcher Mk.I, Silver Botkiller Stickybomb Launcher Mk.II, Gold Botkiller Stickybomb Launcher Mk.II, Stickybomb Launcher, Stickybomb Launcher (Renamed/Strange)
 Can have 24 bombs out
 
@@ -137,10 +258,8 @@ The Splendid Screen
 The Tide Turner
 9 seconds longer charge time, taking damage no longer reduces charge time
 
-The Eyelander, Festive Eyelander, Nessie's Nine Iron, Horseless Headless Horsemann's Headtaker
-Longer deploy and holster time removed
-
-The Scotsman's Skullcutter, The Claidheamh Mòr, The Persian Persuader, The Half-Zatoichi
+Melee [Slot 2]
+The Eyelander, Festive Eyelander, Nessie's Nine Iron, Horseless Headless Horsemann's Headtaker, The Scotsman's Skullcutter, The Claidheamh Mòr, The Persian Persuader, The Half-Zatoichi
 Longer deploy and holster time removed
 
 The Pain Train
@@ -149,64 +268,12 @@ You now capture at 3x
 Ullapool Caber
 Always crits and kills yourself
 
-Rocket Launcher, Rocket Launcher (Renamed/Strange), The Direct Hit, The Black Box, Rocket Jumper, The Liberty Launcher, The Cow Mangler 5000, The Original, Festive Rocket Launcher, The Beggar's Bazooka, Silver Botkiller Rocket Launcher Mk.I, Gold Botkiller Rocket Launcher Mk.I, Rust Botkiller Rocket Launcher Mk.I, Blood Botkiller Rocket Launcher Mk.I, Carbonado Botkiller Rocket Launcher Mk.I, Diamond Botkiller Rocket Launcher Mk.I, Silver Botkiller Rocket Launcher Mk.II, Gold Botkiller Rocket Launcher Mk.II, Festive Black Box, The Air Strike, Woodland Warrior, Sand Cannon, American Pastoral, Smalltown Bringdown, Shell Shocker, Aqua Marine, Autumn, Blue Mew, Brain Candy, Coffin Nail, High Roller's, Warhawk
+Spy
+Secondary [Slot 0]
+Coffin Nail
 You can now rocketjump higher
 
-The Reserve Shooter
-Is now a anti aircraft rifle, crits instead of minicrit, 100% accurate, 1 clip size
-
-The Righteous Bison
-Faster lazers
-
-The Buff Banner, Festive Buff Banner, The Battalion's Backup, The Concheror
-Now lasts 3 as long
-
-Gunboats
-25% Faster move speed for faster and longer rocket jumps!
-
-The Mantreads
-Better air control
-
-The Equalizer
-You can get even more overheal as soldier!
-
-The Escape Plan
-4 times the healing from medics when active!
-
-The Disciplinary Action
-Faster whips, less dmg
-
-The Market Gardener
-Melee Range Increased a bit
-
-Scattergun, Scattergun (Renamed/Strange), Festive Scattergun, Silver Botkiller Scattergun Mk.I, Gold Botkiller Scattergun Mk.I, Rust Botkiller Scattergun Mk.I, Blood Botkiller Scattergun Mk.I, Carbonado Botkiller Scattergun Mk.I, Diamond Botkiller Scattergun Mk.I, Silver Botkiller Scattergun Mk.II, Gold Botkiller Scattergun Mk.II, Night Terror, Tartan Torpedo, Country Crusher, Backcountry Blaster, Spruce Deuce, Current Event, Macabre Web, Nutcracker, Blue Mew, Flower Power, Shot to Hell, Killer Bee, Corsair, Coffin Nail
-Speedboost on hit!
-
-Force-A-Nature
-wowzers
-
-The Shortstop
-Increased damage, but take slightly more pushback
-
-The Soda Popper
-Less Clip, faster reload
-
-The Back Scatter
-Crits when it would minicrit
-
-Baby Face's Blaster
-No longer lose hype, build hype by jumping and keep it forever
-
-Fire Axe, Fire Axe (Renamed/Strange)
-Added:Reveals disguised victim on hit
-10 max health added
-
-Fists, Fists (Renamed/Strange), Apoco-Fists
-20% faster weapon switch
-
-Bonesaw, Bonesaw (Renamed/Strange), Festive Bonesaw
-Now adds 10 seconds of bleed
-
-Shovel, Shovel (Renamed/Strange)
-Added: Mini-crits from the back
+unknown
+972  30474
+pyro
 

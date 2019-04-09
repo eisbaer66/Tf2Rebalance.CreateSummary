@@ -34,7 +34,7 @@ namespace Tf2Rebalance.CreateSummary
                     args = new[] {input};
                 }
 
-                IDictionary<string, string> weaponNames = AlliedModsWiki.GetWeaponNames();
+                IDictionary<string, List<ItemInfo>> weaponNames = AlliedModsWiki.GetItemInfos();
                 Converter converter = new Converter(weaponNames);
 
                 foreach (string filename in args)

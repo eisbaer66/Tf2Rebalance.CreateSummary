@@ -9,16 +9,7 @@ namespace Tf2Rebalance.CreateSummary.Tests
     [TestClass]
     public class ConverterTests
     {
-        IDictionary<string, string> weaponNames = new Dictionary<string, string>
-        {
-            {"132", "Eyelander"},
-            {"1082", "Festive Eyelander"},
-            {"482", "Nessie's Nine Iron"},
-            {"266", "Horseless Headless Horsemann\'s Headtaker"},
-            {"127", "Direct Hit"},
-        };
-
-        private IDictionary<string, string> _weaponNames;
+        private IDictionary<string, List<ItemInfo>> _itemInfos;
 
         [TestInitialize]
         public void TestInitialize()
@@ -29,7 +20,7 @@ namespace Tf2Rebalance.CreateSummary.Tests
                 .Enrich.FromLogContext()
                 .CreateLogger();
 
-            _weaponNames = AlliedModsWiki.GetWeaponNames();
+            _itemInfos = AlliedModsWiki.GetItemInfos();
         }
 
         [TestMethod]
@@ -41,7 +32,7 @@ namespace Tf2Rebalance.CreateSummary.Tests
             string input = File.ReadAllText(inputFilename);
             string expectedOutput = File.ReadAllText(expectedOutputFilename);
 
-            Converter converter = new Converter(_weaponNames);
+            Converter converter = new Converter(_itemInfos);
 
 
             string output = converter.Execute(input);
