@@ -11,22 +11,25 @@ namespace Tf2Rebalance.CreateSummary
         public string Create(IEnumerable<RebalanceInfo> infos)
         {
             var groupings = infos
+                .OrderBy(c => c.name)
                 .GroupBy(x => new { x.category, x.itemclass, x.slot })
                 .OrderBy(s => GetSlot(s.Key.slot))
                 .GroupBy(x => new { x.Key.category, x.Key.itemclass })
-                .GroupBy(x => x.Key.category);
+                .OrderBy(c => c.Key.itemclass)
+                .GroupBy(x => x.Key.category)
+                .OrderBy(c => c.Key);
 
             Init();
-            foreach (var classes in groupings.OrderBy(c => c.Key))
+            foreach (var classes in groupings)
             {
                 WriteCategory(classes.Key);
-                foreach (var slots in classes.OrderBy(c => c.Key.itemclass))
+                foreach (var slots in classes)
                 {
                     string itemclass = slots.Key.itemclass;
                     if (!string.IsNullOrEmpty(itemclass))
                         WriteClass(itemclass);
 
-                    foreach (var weapons in slots.OrderBy(c => c.Key.slot))
+                    foreach (var weapons in slots)
                     {
                         string slot = weapons.Key.slot;
                         if (!string.IsNullOrEmpty(slot))
@@ -43,7 +46,7 @@ namespace Tf2Rebalance.CreateSummary
                                 itemInfo.name = name;
                                 return itemInfo;
                             });
-                        foreach (var weapon in groupedWeapons.OrderBy(c => c.name))
+                        foreach (var weapon in groupedWeapons)
                         {
                             Write(weapon);
                         }

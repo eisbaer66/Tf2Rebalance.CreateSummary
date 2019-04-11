@@ -36,6 +36,7 @@ namespace Tf2Rebalance.CreateSummary
 
                 IDictionary<string, List<ItemInfo>> weaponNames = AlliedModsWiki.GetItemInfos();
                 Converter converter = new Converter(weaponNames);
+                //IRebalanceInfoFormater formater = new RebalanceInfoTextFormater();
                 IRebalanceInfoFormater formater = new RebalanceInfoRtfFormater();
 
                 foreach (string filename in args)

@@ -1,7 +1,7 @@
 Weapons
 Demoman
 Melee 
-The Eyelander, Festive Eyelander, Nessie's Nine Iron, Horseless Headless Horsemann's Headtaker
+Festive Eyelander, Horseless Headless Horsemann's Headtaker, Nessie's Nine Iron, The Eyelander
 Longer deploy and holster time removed
 
 Soldier
