@@ -16,7 +16,7 @@ namespace Tf2Rebalance.CreateSummary
             RtfParagraph paragraph = _document.addParagraph();
             RtfCharFormat format = paragraph.addCharFormat();
             format.FontStyle.addStyle(FontStyleFlag.Bold | FontStyleFlag.Italic | FontStyleFlag.Underline);
-            paragraph.Text.AppendLine(text);
+            paragraph.Text.Append(text);
         }
 
         protected override void WriteClass(string text)
@@ -24,7 +24,7 @@ namespace Tf2Rebalance.CreateSummary
             RtfParagraph paragraph = _document.addParagraph();
             RtfCharFormat format = paragraph.addCharFormat();
             format.FontStyle.addStyle(FontStyleFlag.Bold | FontStyleFlag.Underline);
-            paragraph.Text.AppendLine(text);
+            paragraph.Text.Append(text);
         }
 
         protected override void WriteSlot(string text)
@@ -32,7 +32,7 @@ namespace Tf2Rebalance.CreateSummary
             RtfParagraph paragraph = _document.addParagraph();
             RtfCharFormat format = paragraph.addCharFormat();
             format.FontStyle.addStyle(FontStyleFlag.Italic);
-            paragraph.Text.AppendLine(text);
+            paragraph.Text.Append(text);
         }
 
         protected override void Write(RebalanceInfo weapon)
@@ -40,12 +40,11 @@ namespace Tf2Rebalance.CreateSummary
             RtfParagraph paragraphWeaponName = _document.addParagraph();
             RtfCharFormat formatWeaponName = paragraphWeaponName.addCharFormat();
             formatWeaponName.FontStyle.addStyle(FontStyleFlag.Bold);
-            paragraphWeaponName.Text.AppendLine(weapon.name);
+            paragraphWeaponName.Text.Append(weapon.name);
 
             RtfParagraph paragraph = _document.addParagraph();
             RtfCharFormat format = paragraph.addCharFormat();
             paragraph.Text.AppendLine(weapon.info);
-            paragraph.Text.AppendLine();
         }
 
         protected override string Finalize()

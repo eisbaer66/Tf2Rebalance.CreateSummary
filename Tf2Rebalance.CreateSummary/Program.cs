@@ -78,8 +78,7 @@ namespace Tf2Rebalance.CreateSummary
                 return;
             }
 
-            //string outputFilename = filename.Replace(Path.GetFileNameWithoutExtension(filename), Path.GetFileNameWithoutExtension(filename) + "_summary");
-            string outputFilename = Path.GetFileNameWithoutExtension(filename) + "_summary.rtf";
+            string outputFilename = filename.Replace(Path.GetFileName(filename), Path.GetFileNameWithoutExtension(filename) + "_summary.rtf");
 
             Log.Information("writing summary to {SummaryFileName}", outputFilename);
             File.WriteAllText(outputFilename, output);
