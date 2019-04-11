@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://licenses.nuget.org/LGPL-3.0-only</PackageLicenseUrl>
+    <Copyright>https://sourceforge.net/u/diwei/profile/</Copyright>
   </PropertyGroup>
 
 </Project>

@@ -260,3 +260,4 @@ paket-files/
 __pycache__/
 *.pyc
 /Tf2Rebalance.CreateSummary/Properties/PublishProfiles/FolderProfile.pubxml
+/.fossa.yml
