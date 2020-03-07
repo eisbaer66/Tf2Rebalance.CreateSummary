@@ -1,12 +1,46 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
 
 namespace Tf2Rebalance.CreateSummary
 {
+    public class Weapon
+    {
+        public string id      { get; set; }
+        public string name      { get; set; }
+    }
+    public class Info
+    {
+        public string info      { get; set; }
+        public string category  { get; set; }
+        public string itemclass { get; set; }
+        public string slot      { get; set; }
+
+        public IEnumerable<Weapon> weapons { get; set; }
+    }
+
+    public class Slot
+    {
+        public string name { get; set; }
+        public IEnumerable<Info> infos { get; set; }
+    }
+
+    public class Class
+    {
+        public string name { get; set; }
+        public IEnumerable<Slot> slots { get; set; }
+    }
+
+    public class Category
+    {
+        public string name { get; set; }
+        public IEnumerable<Class> classes { get; set; }
+    }
+
     public abstract class RebalanceInfoFormaterBase : IRebalanceInfoFormater
     {
-        private string _slotPattern = @"\[Slot (\d)\]";
+        protected string SlotPattern = @"\[Slot (\d)\]";
 
         public string Create(IEnumerable<RebalanceInfo> infos)
         {
@@ -17,58 +51,52 @@ namespace Tf2Rebalance.CreateSummary
                 .GroupBy(x => new { x.Key.category, x.Key.itemclass })
                 .OrderBy(c => c.Key.itemclass)
                 .GroupBy(x => x.Key.category)
-                .OrderBy(c => c.Key);
+                .OrderBy(c => c.Key)
+                .Select(classes => new Category
+                                   {
+                                       name = classes.Key, 
+                                       classes = classes.Select(slots => new Class
+                                                                         {
+                                                                             name = slots.Key.itemclass,
+                                                                             slots = slots.Select(weapons => new Slot
+                                                                                                              {
+                                                                                                                  name = weapons.Key.slot,
+                                                                                                                  infos = weapons.GroupBy(x => x.info)
+                                                                                                                                 .Select(g =>
+                                                                                                                                         {
+                                                                                                                                             var    itemInfo = g.First();
+                                                                                                                                             return new Info
+                                                                                                                                             {
+                                                                                                                                                 info = g.Key,
+                                                                                                                                                 category = itemInfo.category,
+                                                                                                                                                 itemclass = itemInfo.itemclass,
+                                                                                                                                                 slot = itemInfo.slot,
+                                                                                                                                                 weapons = g.Select(w => new Weapon
+                                                                                                                                                                         {
+                                                                                                                                                                             id = w.id,
+                                                                                                                                                                             name = w.name,
+                                                                                                                                                                         })
+                                                                                                                                             };
+                                                                                                                                         })
+                                                                             })
+                                                                         })
+                                   });
 
             Init();
-            foreach (var classes in groupings)
-            {
-                WriteCategory(classes.Key);
-                foreach (var slots in classes)
-                {
-                    string itemclass = slots.Key.itemclass;
-                    if (!string.IsNullOrEmpty(itemclass))
-                        WriteClass(itemclass);
-
-                    foreach (var weapons in slots)
-                    {
-                        string slot = weapons.Key.slot;
-                        if (!string.IsNullOrEmpty(slot))
-                        {
-                            slot = Regex.Replace(slot, _slotPattern, string.Empty);
-                            WriteSlot(slot);
-                        }
-
-                        var groupedWeapons = weapons.GroupBy(x => x.info)
-                            .Select(g =>
-                            {
-                                string name = string.Join(", ", g.Select(i => i.name));
-                                var itemInfo = g.First();
-                                itemInfo.name = name;
-                                return itemInfo;
-                            });
-                        foreach (var weapon in groupedWeapons)
-                        {
-                            Write(weapon);
-                        }
-                    }
-                }
-            }
+            Process(groupings);
 
             return Finalize();
         }
-        
+
         protected abstract void Init();
-        protected abstract void WriteCategory(string text);
-        protected abstract void WriteClass(string text);
-        protected abstract void WriteSlot(string text);
-        protected abstract void Write(RebalanceInfo weapon);
+        protected abstract void Process(IEnumerable<Category> groupings);
         protected abstract string Finalize();
 
         private string GetSlot(string slot)
         {
             if (slot == null)
                 return string.Empty;
-            Match match = Regex.Match(slot, _slotPattern);
+            Match match = Regex.Match(slot, SlotPattern);
             if (match == null)
                 return string.Empty;
             if (!match.Success)

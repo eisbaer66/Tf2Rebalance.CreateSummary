@@ -1,0 +1,1928 @@
+[
+  {
+    "name": "Classes",
+    "classes": [
+      {
+        "name": null,
+        "slots": [
+          {
+            "name": null,
+            "infos": [
+              {
+                "info": "Reduced build and upgrade cost of teleporters by 50%",
+                "category": "Classes",
+                "itemclass": null,
+                "slot": null,
+                "weapons": [
+                  {
+                    "id": "engineer",
+                    "name": "Engineer"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "unknown",
+    "classes": [
+      {
+        "name": null,
+        "slots": [
+          {
+            "name": null,
+            "infos": [
+              {
+                "info": "pyro",
+                "category": "unknown",
+                "itemclass": null,
+                "slot": null,
+                "weapons": [
+                  {
+                    "id": "972  30474",
+                    "name": "972  30474"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Weapons",
+    "classes": [
+      {
+        "name": "Demoman",
+        "slots": [
+          {
+            "name": "Primary [Slot 0]",
+            "infos": [
+              {
+                "info": "More health, faster moving speed and better turn control and better refill",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "405",
+                    "name": "Ali Baba's Wee Booties"
+                  },
+                  {
+                    "id": "608",
+                    "name": "The Bootlegger"
+                  }
+                ]
+              },
+              {
+                "info": "Has 5 in clip",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "15077",
+                    "name": "Autumn"
+                  },
+                  {
+                    "id": "15158",
+                    "name": "Butcher Bird"
+                  },
+                  {
+                    "id": "15116",
+                    "name": "Coffin Nail"
+                  },
+                  {
+                    "id": "1007",
+                    "name": "Festive Grenade Launcher"
+                  },
+                  {
+                    "id": "19",
+                    "name": "Grenade Launcher"
+                  },
+                  {
+                    "id": "206",
+                    "name": "Grenade Launcher (Renamed/Strange)"
+                  },
+                  {
+                    "id": "15079",
+                    "name": "Macabre Web"
+                  },
+                  {
+                    "id": "15091",
+                    "name": "Rainbow"
+                  },
+                  {
+                    "id": "15092",
+                    "name": "Sweet Dreams"
+                  },
+                  {
+                    "id": "15117",
+                    "name": "Top Shelf"
+                  },
+                  {
+                    "id": "15142",
+                    "name": "Warhawk"
+                  }
+                ]
+              },
+              {
+                "info": "Jump height increased by 200%",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "1101",
+                    "name": "The B.A.S.E. Jumper"
+                  }
+                ]
+              },
+              {
+                "info": "Slightly shorter fuse time",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "1151",
+                    "name": "The Iron Bomber"
+                  }
+                ]
+              },
+              {
+                "info": "Only has 2 clip, shoots 2 at the time, no longer shatters",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "308",
+                    "name": "The Loch-n-Load"
+                  }
+                ]
+              },
+              {
+                "info": "Increased pushback slightly",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "996",
+                    "name": "The Loose Cannon"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Secondary [Slot 1]",
+            "infos": [
+              {
+                "info": "Can have 24 bombs out",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "15082",
+                    "name": "Autumn"
+                  },
+                  {
+                    "id": "15024",
+                    "name": "Blasted Bombardier"
+                  },
+                  {
+                    "id": "15155",
+                    "name": "Blitzkrieg"
+                  },
+                  {
+                    "id": "895",
+                    "name": "Blood Botkiller Stickybomb Launcher Mk.I"
+                  },
+                  {
+                    "id": "904",
+                    "name": "Carbonado Botkiller Stickybomb Launcher Mk.I"
+                  },
+                  {
+                    "id": "15012",
+                    "name": "Carpet Bomber"
+                  },
+                  {
+                    "id": "15137",
+                    "name": "Coffin Nail"
+                  },
+                  {
+                    "id": "913",
+                    "name": "Diamond Botkiller Stickybomb Launcher Mk.I"
+                  },
+                  {
+                    "id": "15138",
+                    "name": "Dressed to Kill"
+                  },
+                  {
+                    "id": "661",
+                    "name": "Festive Stickybomb Launcher"
+                  },
+                  {
+                    "id": "806",
+                    "name": "Gold Botkiller Stickybomb Launcher Mk.I"
+                  },
+                  {
+                    "id": "971",
+                    "name": "Gold Botkiller Stickybomb Launcher Mk.II"
+                  },
+                  {
+                    "id": "15045",
+                    "name": "Liquid Asset"
+                  },
+                  {
+                    "id": "15084",
+                    "name": "Macabre Web"
+                  },
+                  {
+                    "id": "15048",
+                    "name": "Pink Elephant"
+                  },
+                  {
+                    "id": "15083",
+                    "name": "Pumpkin Patch"
+                  },
+                  {
+                    "id": "15038",
+                    "name": "Rooftop Wrangler"
+                  },
+                  {
+                    "id": "886",
+                    "name": "Rust Botkiller Stickybomb Launcher Mk.I"
+                  },
+                  {
+                    "id": "797",
+                    "name": "Silver Botkiller Stickybomb Launcher Mk.I"
+                  },
+                  {
+                    "id": "962",
+                    "name": "Silver Botkiller Stickybomb Launcher Mk.II"
+                  },
+                  {
+                    "id": "20",
+                    "name": "Stickybomb Launcher"
+                  },
+                  {
+                    "id": "207",
+                    "name": "Stickybomb Launcher (Renamed/Strange)"
+                  },
+                  {
+                    "id": "15009",
+                    "name": "Sudden Flurry"
+                  },
+                  {
+                    "id": "15113",
+                    "name": "Sweet Dreams"
+                  }
+                ]
+              },
+              {
+                "info": "3 seconds Longer charge duration",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "1144",
+                    "name": "Festive Targe"
+                  },
+                  {
+                    "id": "131",
+                    "name": "The Chargin' Targe"
+                  }
+                ]
+              },
+              {
+                "info": "Faster firing speed, more bombs out, faster reload",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "265",
+                    "name": "Sticky Jumper"
+                  }
+                ]
+              },
+              {
+                "info": "Instant arm time",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "1150",
+                    "name": "The Quickiebomb Launcher"
+                  }
+                ]
+              },
+              {
+                "info": "Can have 40 bombs out",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "130",
+                    "name": "The Scottish Resistance"
+                  }
+                ]
+              },
+              {
+                "info": "6 seconds longer charge time",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "406",
+                    "name": "The Splendid Screen"
+                  }
+                ]
+              },
+              {
+                "info": "9 seconds longer charge time, taking damage no longer reduces charge time",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "1099",
+                    "name": "The Tide Turner"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Melee [Slot 2]",
+            "infos": [
+              {
+                "info": "Longer deploy and holster time removed",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "1082",
+                    "name": "Festive Eyelander"
+                  },
+                  {
+                    "id": "266",
+                    "name": "Horseless Headless Horsemann's Headtaker"
+                  },
+                  {
+                    "id": "482",
+                    "name": "Nessie's Nine Iron"
+                  },
+                  {
+                    "id": "327",
+                    "name": "The Claidheamh Mòr"
+                  },
+                  {
+                    "id": "132",
+                    "name": "The Eyelander"
+                  },
+                  {
+                    "id": "357",
+                    "name": "The Half-Zatoichi"
+                  },
+                  {
+                    "id": "404",
+                    "name": "The Persian Persuader"
+                  },
+                  {
+                    "id": "172",
+                    "name": "The Scotsman's Skullcutter"
+                  }
+                ]
+              },
+              {
+                "info": "You now capture at 3x",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "154",
+                    "name": "The Pain Train"
+                  }
+                ]
+              },
+              {
+                "info": "Always crits and kills yourself",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "307",
+                    "name": "Ullapool Caber"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Engineer",
+        "slots": [
+          {
+            "name": "Primary [Slot 0]",
+            "infos": [
+              {
+                "info": "Less damage, faster shooting, always accurate",
+                "category": "Weapons",
+                "itemclass": "Engineer",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "1153",
+                    "name": "Panic Attack"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy",
+        "slots": [
+          {
+            "name": "Primary [Slot 0]",
+            "infos": [
+              {
+                "info": "now heals on hit",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "15026",
+                    "name": "Antique Annihilator"
+                  },
+                  {
+                    "id": "891",
+                    "name": "Blood Botkiller Minigun Mk.I"
+                  },
+                  {
+                    "id": "15098",
+                    "name": "Brain Candy"
+                  },
+                  {
+                    "id": "15055",
+                    "name": "Brick House"
+                  },
+                  {
+                    "id": "15147",
+                    "name": "Butcher Bird"
+                  },
+                  {
+                    "id": "900",
+                    "name": "Carbonado Botkiller Minigun Mk.I"
+                  },
+                  {
+                    "id": "15040",
+                    "name": "Citizen Pain"
+                  },
+                  {
+                    "id": "15123",
+                    "name": "Coffin Nail"
+                  },
+                  {
+                    "id": "909",
+                    "name": "Diamond Botkiller Minigun Mk.I"
+                  },
+                  {
+                    "id": "15124",
+                    "name": "Dressed to Kill"
+                  },
+                  {
+                    "id": "654",
+                    "name": "Festive Minigun"
+                  },
+                  {
+                    "id": "802",
+                    "name": "Gold Botkiller Minigun Mk.I"
+                  },
+                  {
+                    "id": "967",
+                    "name": "Gold Botkiller Minigun Mk.II"
+                  },
+                  {
+                    "id": "298",
+                    "name": "Iron Curtain"
+                  },
+                  {
+                    "id": "15020",
+                    "name": "Iron Wood"
+                  },
+                  {
+                    "id": "15004",
+                    "name": "King of the Jungle"
+                  },
+                  {
+                    "id": "15086",
+                    "name": "Macabre Web"
+                  },
+                  {
+                    "id": "15",
+                    "name": "Minigun"
+                  },
+                  {
+                    "id": "202",
+                    "name": "Minigun (Renamed/Strange)"
+                  },
+                  {
+                    "id": "15099",
+                    "name": "Mister Cuddles"
+                  },
+                  {
+                    "id": "15088",
+                    "name": "Nutcracker"
+                  },
+                  {
+                    "id": "15087",
+                    "name": "Pumpkin Patch"
+                  },
+                  {
+                    "id": "882",
+                    "name": "Rust Botkiller Minigun Mk.I"
+                  },
+                  {
+                    "id": "793",
+                    "name": "Silver Botkiller Minigun Mk.I"
+                  },
+                  {
+                    "id": "958",
+                    "name": "Silver Botkiller Minigun Mk.II"
+                  },
+                  {
+                    "id": "15125",
+                    "name": "Top Shelf"
+                  },
+                  {
+                    "id": "15031",
+                    "name": "War Room"
+                  }
+                ]
+              },
+              {
+                "info": "slows the enemy more",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "41",
+                    "name": "Natascha"
+                  }
+                ]
+              },
+              {
+                "info": "more bullets, more spread",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "312",
+                    "name": "The Brass Beast"
+                  }
+                ]
+              },
+              {
+                "info": "crits against dudeson fire",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "811",
+                    "name": "The Huo-Long Heater"
+                  },
+                  {
+                    "id": "832",
+                    "name": "The Huo-Long Heater (Genuine)"
+                  }
+                ]
+              },
+              {
+                "info": "more accurate and more faster",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "424",
+                    "name": "Tomislav"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Secondary [Slot 1]",
+            "infos": [
+              {
+                "info": "Healing increased while eating",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "1002",
+                    "name": "Festive Sandvich"
+                  },
+                  {
+                    "id": "863",
+                    "name": "Robo-Sandvich"
+                  },
+                  {
+                    "id": "42",
+                    "name": "Sandvich"
+                  }
+                ]
+              },
+              {
+                "info": "now can switch to and throw faster",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "433",
+                    "name": "Fishcake"
+                  },
+                  {
+                    "id": "1190",
+                    "name": "Second Banana"
+                  },
+                  {
+                    "id": "159",
+                    "name": "The Dalokohs Bar"
+                  }
+                ]
+              },
+              {
+                "info": "Less damage, faster shooting, always accurate",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "1153",
+                    "name": "Panic Attack"
+                  }
+                ]
+              },
+              {
+                "info": "instead of taking more dmg, you take like 70% less",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "311",
+                    "name": "The Buffalo Steak Sandvich"
+                  }
+                ]
+              },
+              {
+                "info": "Is now scattergun and fat scout, you give up your primary for this",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "425",
+                    "name": "The Family Business"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Melee [Slot 2]",
+            "infos": [
+              {
+                "info": "20% faster weapon switch",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "587",
+                    "name": "Apoco-Fists"
+                  },
+                  {
+                    "id": "5",
+                    "name": "Fists"
+                  },
+                  {
+                    "id": "195",
+                    "name": "Fists (Renamed/Strange)"
+                  }
+                ]
+              },
+              {
+                "info": "Run faster and drain health faster",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "239",
+                    "name": "Gloves of Running Urgently"
+                  },
+                  {
+                    "id": "1100",
+                    "name": "The Bread Bite"
+                  }
+                ]
+              },
+              {
+                "info": "On hit gain 15 second speed bost",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "426",
+                    "name": "The Eviction Notice"
+                  }
+                ]
+              },
+              {
+                "info": "",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "656",
+                    "name": "The Holiday Punch"
+                  }
+                ]
+              },
+              {
+                "info": "Crits last 15 seconds longer",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "43",
+                    "name": "The Killing Gloves of Boxing"
+                  }
+                ]
+              },
+              {
+                "info": "Stronger punches makes enemies go bye bye",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "310",
+                    "name": "Warrior's Spirit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Medic",
+        "slots": [
+          {
+            "name": "Secondary [Slot 1]",
+            "infos": [
+              {
+                "info": "now heals on hit",
+                "category": "Weapons",
+                "itemclass": "Medic",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "15123",
+                    "name": "Coffin Nail"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Melee [Slot 2]",
+            "infos": [
+              {
+                "info": "Now adds 10 seconds of bleed",
+                "category": "Weapons",
+                "itemclass": "Medic",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "8",
+                    "name": "Bonesaw"
+                  },
+                  {
+                    "id": "198",
+                    "name": "Bonesaw (Renamed/Strange)"
+                  },
+                  {
+                    "id": "1143",
+                    "name": "Festive Bonesaw"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pyro",
+        "slots": [
+          {
+            "name": "Primary [Slot 0]",
+            "infos": [
+              {
+                "info": "pyro",
+                "category": "Weapons",
+                "itemclass": "Pyro",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "896",
+                    "name": "Blood Botkiller Flame Thrower Mk.I"
+                  },
+                  {
+                    "id": "905",
+                    "name": "Carbonado Botkiller Flame Thrower Mk.I"
+                  },
+                  {
+                    "id": "914",
+                    "name": "Diamond Botkiller Flame Thrower Mk.I"
+                  },
+                  {
+                    "id": "659",
+                    "name": "Festive Flame Thrower"
+                  },
+                  {
+                    "id": "21",
+                    "name": "Flame Thrower"
+                  },
+                  {
+                    "id": "208",
+                    "name": "Flame Thrower (Renamed/Strange)"
+                  },
+                  {
+                    "id": "807",
+                    "name": "Gold Botkiller Flame Thrower Mk.I"
+                  },
+                  {
+                    "id": "887",
+                    "name": "Rust Botkiller Flame Thrower Mk.I"
+                  },
+                  {
+                    "id": "798",
+                    "name": "Silver Botkiller Flame Thrower Mk.I"
+                  },
+                  {
+                    "id": "963",
+                    "name": "Silver Botkiller Flame Thrower Mk.II"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Secondary [Slot 1]",
+            "infos": [
+              {
+                "info": "sniper has to piss a lot so recharge is fast and throws fast too",
+                "category": "Weapons",
+                "itemclass": "Pyro",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "1180",
+                    "name": "Gas Passer"
+                  }
+                ]
+              },
+              {
+                "info": "Less damage, faster shooting, always accurate",
+                "category": "Weapons",
+                "itemclass": "Pyro",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "1153",
+                    "name": "Panic Attack"
+                  }
+                ]
+              },
+              {
+                "info": "Is now a anti aircraft rifle, crits instead of minicrit, 100% accurate, 1 clip size",
+                "category": "Weapons",
+                "itemclass": "Pyro",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "415",
+                    "name": "The Reserve Shooter"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Melee [Slot 2]",
+            "infos": [
+              {
+                "info": "Added:Reveals disguised victim on hit\r\n10 max health added",
+                "category": "Weapons",
+                "itemclass": "Pyro",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "2",
+                    "name": "Fire Axe"
+                  },
+                  {
+                    "id": "192",
+                    "name": "Fire Axe (Renamed/Strange)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Scout",
+        "slots": [
+          {
+            "name": "Primary [Slot 0]",
+            "infos": [
+              {
+                "info": "No longer lose hype, build hype by jumping and keep it forever",
+                "category": "Weapons",
+                "itemclass": "Scout",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "772",
+                    "name": "Baby Face's Blaster"
+                  }
+                ]
+              },
+              {
+                "info": "Speedboost on hit!",
+                "category": "Weapons",
+                "itemclass": "Scout",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "15029",
+                    "name": "Backcountry Blaster"
+                  },
+                  {
+                    "id": "897",
+                    "name": "Blood Botkiller Scattergun Mk.I"
+                  },
+                  {
+                    "id": "15106",
+                    "name": "Blue Mew"
+                  },
+                  {
+                    "id": "906",
+                    "name": "Carbonado Botkiller Scattergun Mk.I"
+                  },
+                  {
+                    "id": "15131",
+                    "name": "Coffin Nail"
+                  },
+                  {
+                    "id": "15157",
+                    "name": "Corsair"
+                  },
+                  {
+                    "id": "15021",
+                    "name": "Country Crusher"
+                  },
+                  {
+                    "id": "15053",
+                    "name": "Current Event"
+                  },
+                  {
+                    "id": "915",
+                    "name": "Diamond Botkiller Scattergun Mk.I"
+                  },
+                  {
+                    "id": "669",
+                    "name": "Festive Scattergun"
+                  },
+                  {
+                    "id": "15107",
+                    "name": "Flower Power"
+                  },
+                  {
+                    "id": "808",
+                    "name": "Gold Botkiller Scattergun Mk.I"
+                  },
+                  {
+                    "id": "973",
+                    "name": "Gold Botkiller Scattergun Mk.II"
+                  },
+                  {
+                    "id": "15151",
+                    "name": "Killer Bee"
+                  },
+                  {
+                    "id": "15065",
+                    "name": "Macabre Web"
+                  },
+                  {
+                    "id": "15002",
+                    "name": "Night Terror"
+                  },
+                  {
+                    "id": "15069",
+                    "name": "Nutcracker"
+                  },
+                  {
+                    "id": "888",
+                    "name": "Rust Botkiller Scattergun Mk.I"
+                  },
+                  {
+                    "id": "13",
+                    "name": "Scattergun"
+                  },
+                  {
+                    "id": "200",
+                    "name": "Scattergun (Renamed/Strange)"
+                  },
+                  {
+                    "id": "15108",
+                    "name": "Shot to Hell"
+                  },
+                  {
+                    "id": "799",
+                    "name": "Silver Botkiller Scattergun Mk.I"
+                  },
+                  {
+                    "id": "964",
+                    "name": "Silver Botkiller Scattergun Mk.II"
+                  },
+                  {
+                    "id": "15036",
+                    "name": "Spruce Deuce"
+                  },
+                  {
+                    "id": "15015",
+                    "name": "Tartan Torpedo"
+                  }
+                ]
+              },
+              {
+                "info": "wowzers",
+                "category": "Weapons",
+                "itemclass": "Scout",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "45",
+                    "name": "Force-A-Nature"
+                  }
+                ]
+              },
+              {
+                "info": "Crits when it would minicrit",
+                "category": "Weapons",
+                "itemclass": "Scout",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "1103",
+                    "name": "The Back Scatter"
+                  }
+                ]
+              },
+              {
+                "info": "Increased damage, but take slightly more pushback",
+                "category": "Weapons",
+                "itemclass": "Scout",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "220",
+                    "name": "The Shortstop"
+                  }
+                ]
+              },
+              {
+                "info": "Less Clip, faster reload",
+                "category": "Weapons",
+                "itemclass": "Scout",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "448",
+                    "name": "The Soda Popper"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Secondary [Slot 1]",
+            "infos": [
+              {
+                "info": "sniper has to piss a lot so recharge is fast and throws fast too",
+                "category": "Weapons",
+                "itemclass": "Scout",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "222",
+                    "name": "Mad Milk"
+                  },
+                  {
+                    "id": "1121",
+                    "name": "Mutated Milk"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Melee [Slot 2]",
+            "infos": [
+              {
+                "info": "increased dmg to people on fire by 100%",
+                "category": "Weapons",
+                "itemclass": "Scout",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "349",
+                    "name": "Sun-on-a-Stick"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sniper",
+        "slots": [
+          {
+            "name": "Primary [Slot 0]",
+            "infos": [
+              {
+                "info": "now shoots rockets instead of bullets",
+                "category": "Weapons",
+                "itemclass": "Sniper",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "15154",
+                    "name": "Airwolf"
+                  },
+                  {
+                    "id": "15111",
+                    "name": "Balloonicorn"
+                  },
+                  {
+                    "id": "890",
+                    "name": "Blood Botkiller Sniper Rifle Mk.I"
+                  },
+                  {
+                    "id": "15033",
+                    "name": "Bogtrotter"
+                  },
+                  {
+                    "id": "15071",
+                    "name": "Boneyard"
+                  },
+                  {
+                    "id": "899",
+                    "name": "Carbonado Botkiller Sniper Rifle Mk.I"
+                  },
+                  {
+                    "id": "15135",
+                    "name": "Coffin Nail"
+                  },
+                  {
+                    "id": "908",
+                    "name": "Diamond Botkiller Sniper Rifle Mk.I"
+                  },
+                  {
+                    "id": "15136",
+                    "name": "Dressed to Kill"
+                  },
+                  {
+                    "id": "664",
+                    "name": "Festive Sniper Rifle"
+                  },
+                  {
+                    "id": "801",
+                    "name": "Gold Botkiller Sniper Rifle Mk.I"
+                  },
+                  {
+                    "id": "966",
+                    "name": "Gold Botkiller Sniper Rifle Mk.II"
+                  },
+                  {
+                    "id": "15019",
+                    "name": "Lumber From Down Under"
+                  },
+                  {
+                    "id": "15000",
+                    "name": "Night Owl"
+                  },
+                  {
+                    "id": "15070",
+                    "name": "Pumpkin Patch"
+                  },
+                  {
+                    "id": "15007",
+                    "name": "Purple Range"
+                  },
+                  {
+                    "id": "15112",
+                    "name": "Rainbow"
+                  },
+                  {
+                    "id": "881",
+                    "name": "Rust Botkiller Sniper Rifle Mk.I"
+                  },
+                  {
+                    "id": "30665",
+                    "name": "Shooting Star"
+                  },
+                  {
+                    "id": "15023",
+                    "name": "Shot in the Dark"
+                  },
+                  {
+                    "id": "792",
+                    "name": "Silver Botkiller Sniper Rifle Mk.I"
+                  },
+                  {
+                    "id": "957",
+                    "name": "Silver Botkiller Sniper Rifle Mk.II"
+                  },
+                  {
+                    "id": "14",
+                    "name": "Sniper Rifle"
+                  },
+                  {
+                    "id": "201",
+                    "name": "Sniper Rifle (Renamed/Strange)"
+                  },
+                  {
+                    "id": "851",
+                    "name": "The AWPer Hand"
+                  },
+                  {
+                    "id": "1098",
+                    "name": "The Classic"
+                  },
+                  {
+                    "id": "15059",
+                    "name": "Thunderbolt"
+                  },
+                  {
+                    "id": "15072",
+                    "name": "Wildwood"
+                  }
+                ]
+              },
+              {
+                "info": "arrows so fast they are bullets",
+                "category": "Weapons",
+                "itemclass": "Sniper",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "1005",
+                    "name": "Festive Huntsman"
+                  },
+                  {
+                    "id": "1092",
+                    "name": "The Fortified Compound"
+                  },
+                  {
+                    "id": "56",
+                    "name": "The Huntsman"
+                  }
+                ]
+              },
+              {
+                "info": "Increased fully charged damage bonus a little bit, but careful as it now HEALS ENEMY BUILDINGS!\r\nBecause NoFungineer figured out how to get heal with bullets",
+                "category": "Weapons",
+                "itemclass": "Sniper",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "30665",
+                    "name": "Shooting Star"
+                  },
+                  {
+                    "id": "526",
+                    "name": "The Machina"
+                  }
+                ]
+              },
+              {
+                "info": "added 30% more headshot damage",
+                "category": "Weapons",
+                "itemclass": "Sniper",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "402",
+                    "name": "The Bazaar Bargain"
+                  }
+                ]
+              },
+              {
+                "info": "Now drops arrows and you can jump real high and run real fast, giving Sniper an alternative playstyle",
+                "category": "Weapons",
+                "itemclass": "Sniper",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "752",
+                    "name": "The Hitman's Heatmaker"
+                  }
+                ]
+              },
+              {
+                "info": "All shots penetrates",
+                "category": "Weapons",
+                "itemclass": "Sniper",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "230",
+                    "name": "The Sydney Sleeper"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Secondary [Slot 1]",
+            "infos": [
+              {
+                "info": "is now the minigun",
+                "category": "Weapons",
+                "itemclass": "Sniper",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "15153",
+                    "name": "Blitzkrieg"
+                  },
+                  {
+                    "id": "15110",
+                    "name": "Blue Mew"
+                  },
+                  {
+                    "id": "1149",
+                    "name": "Festive SMG"
+                  },
+                  {
+                    "id": "15134",
+                    "name": "High Roller's"
+                  },
+                  {
+                    "id": "15058",
+                    "name": "Low Profile"
+                  },
+                  {
+                    "id": "15022",
+                    "name": "Plaid Potshotter"
+                  },
+                  {
+                    "id": "16",
+                    "name": "SMG"
+                  },
+                  {
+                    "id": "203",
+                    "name": "SMG (Renamed/Strange)"
+                  },
+                  {
+                    "id": "15037",
+                    "name": "Team Sprayer"
+                  },
+                  {
+                    "id": "15032",
+                    "name": "Treadplate Tormenter"
+                  },
+                  {
+                    "id": "15076",
+                    "name": "Wildwood"
+                  },
+                  {
+                    "id": "15001",
+                    "name": "Woodsy Widowmaker"
+                  }
+                ]
+              },
+              {
+                "info": "self heal increased to 25 pr second",
+                "category": "Weapons",
+                "itemclass": "Sniper",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "642",
+                    "name": "Cozy Camper"
+                  }
+                ]
+              },
+              {
+                "info": "100% resistance to afterburn",
+                "category": "Weapons",
+                "itemclass": "Sniper",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "231",
+                    "name": "Darwin's Danger Shield"
+                  }
+                ]
+              },
+              {
+                "info": "sniper has to piss a lot so recharge is fast and throws fast too",
+                "category": "Weapons",
+                "itemclass": "Sniper",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "1083",
+                    "name": "Festive Jarate"
+                  },
+                  {
+                    "id": "58",
+                    "name": "Jarate"
+                  },
+                  {
+                    "id": "1105",
+                    "name": "The Self-Aware Beauty Mark"
+                  }
+                ]
+              },
+              {
+                "info": "increased minicrit duration to 60 seconds",
+                "category": "Weapons",
+                "itemclass": "Sniper",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "751",
+                    "name": "The Cleaner's Carbine"
+                  }
+                ]
+              },
+              {
+                "info": "can't get killed by backstabs unless the spy uses the fast knife",
+                "category": "Weapons",
+                "itemclass": "Sniper",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "57",
+                    "name": "The Razorback"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Melee [Slot 2]",
+            "infos": [
+              {
+                "info": "speed boost on kill so its easier to chain",
+                "category": "Weapons",
+                "itemclass": "Sniper",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "232",
+                    "name": "The Bushwacka"
+                  }
+                ]
+              },
+              {
+                "info": "90% less dmg while half alife, 100% dmg bonus while half dead",
+                "category": "Weapons",
+                "itemclass": "Sniper",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "401",
+                    "name": "The Shahanshah"
+                  }
+                ]
+              },
+              {
+                "info": "on hit bleed for 30 seconds ya bloody bleeder!",
+                "category": "Weapons",
+                "itemclass": "Sniper",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "171",
+                    "name": "The Tribalman's Shiv"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldier",
+        "slots": [
+          {
+            "name": "Primary [Slot 0]",
+            "infos": [
+              {
+                "info": "You can now rocketjump higher",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "15028",
+                    "name": "American Pastoral"
+                  },
+                  {
+                    "id": "15057",
+                    "name": "Aqua Marine"
+                  },
+                  {
+                    "id": "15081",
+                    "name": "Autumn"
+                  },
+                  {
+                    "id": "898",
+                    "name": "Blood Botkiller Rocket Launcher Mk.I"
+                  },
+                  {
+                    "id": "15104",
+                    "name": "Blue Mew"
+                  },
+                  {
+                    "id": "15105",
+                    "name": "Brain Candy"
+                  },
+                  {
+                    "id": "907",
+                    "name": "Carbonado Botkiller Rocket Launcher Mk.I"
+                  },
+                  {
+                    "id": "15129",
+                    "name": "Coffin Nail"
+                  },
+                  {
+                    "id": "916",
+                    "name": "Diamond Botkiller Rocket Launcher Mk.I"
+                  },
+                  {
+                    "id": "1085",
+                    "name": "Festive Black Box"
+                  },
+                  {
+                    "id": "658",
+                    "name": "Festive Rocket Launcher"
+                  },
+                  {
+                    "id": "809",
+                    "name": "Gold Botkiller Rocket Launcher Mk.I"
+                  },
+                  {
+                    "id": "974",
+                    "name": "Gold Botkiller Rocket Launcher Mk.II"
+                  },
+                  {
+                    "id": "15130",
+                    "name": "High Roller's"
+                  },
+                  {
+                    "id": "237",
+                    "name": "Rocket Jumper"
+                  },
+                  {
+                    "id": "18",
+                    "name": "Rocket Launcher"
+                  },
+                  {
+                    "id": "205",
+                    "name": "Rocket Launcher (Renamed/Strange)"
+                  },
+                  {
+                    "id": "889",
+                    "name": "Rust Botkiller Rocket Launcher Mk.I"
+                  },
+                  {
+                    "id": "15014",
+                    "name": "Sand Cannon"
+                  },
+                  {
+                    "id": "15052",
+                    "name": "Shell Shocker"
+                  },
+                  {
+                    "id": "800",
+                    "name": "Silver Botkiller Rocket Launcher Mk.I"
+                  },
+                  {
+                    "id": "965",
+                    "name": "Silver Botkiller Rocket Launcher Mk.II"
+                  },
+                  {
+                    "id": "15043",
+                    "name": "Smalltown Bringdown"
+                  },
+                  {
+                    "id": "1104",
+                    "name": "The Air Strike"
+                  },
+                  {
+                    "id": "730",
+                    "name": "The Beggar's Bazooka"
+                  },
+                  {
+                    "id": "228",
+                    "name": "The Black Box"
+                  },
+                  {
+                    "id": "441",
+                    "name": "The Cow Mangler 5000"
+                  },
+                  {
+                    "id": "127",
+                    "name": "The Direct Hit"
+                  },
+                  {
+                    "id": "414",
+                    "name": "The Liberty Launcher"
+                  },
+                  {
+                    "id": "513",
+                    "name": "The Original"
+                  },
+                  {
+                    "id": "15150",
+                    "name": "Warhawk"
+                  },
+                  {
+                    "id": "15006",
+                    "name": "Woodland Warrior"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Secondary [Slot 1]",
+            "infos": [
+              {
+                "info": "Now lasts 3 as long",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "1001",
+                    "name": "Festive Buff Banner"
+                  },
+                  {
+                    "id": "226",
+                    "name": "The Battalion's Backup"
+                  },
+                  {
+                    "id": "129",
+                    "name": "The Buff Banner"
+                  },
+                  {
+                    "id": "354",
+                    "name": "The Concheror"
+                  }
+                ]
+              },
+              {
+                "info": "25% Faster move speed for faster and longer rocket jumps!",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "133",
+                    "name": "Gunboats"
+                  }
+                ]
+              },
+              {
+                "info": "Less damage, faster shooting, always accurate",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "1153",
+                    "name": "Panic Attack"
+                  }
+                ]
+              },
+              {
+                "info": "Jump height increased by 200%",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "1101",
+                    "name": "The B.A.S.E. Jumper"
+                  }
+                ]
+              },
+              {
+                "info": "Better air control",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "444",
+                    "name": "The Mantreads"
+                  }
+                ]
+              },
+              {
+                "info": "Is now a anti aircraft rifle, crits instead of minicrit, 100% accurate, 1 clip size",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "415",
+                    "name": "The Reserve Shooter"
+                  }
+                ]
+              },
+              {
+                "info": "Faster lazers",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Secondary [Slot 1]",
+                "weapons": [
+                  {
+                    "id": "442",
+                    "name": "The Righteous Bison"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Melee [Slot 2]",
+            "infos": [
+              {
+                "info": "Added: Mini-crits from the back",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "6",
+                    "name": "Shovel"
+                  },
+                  {
+                    "id": "196",
+                    "name": "Shovel (Renamed/Strange)"
+                  }
+                ]
+              },
+              {
+                "info": "Faster whips, less dmg",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "447",
+                    "name": "The Disciplinary Action"
+                  }
+                ]
+              },
+              {
+                "info": "You can get even more overheal as soldier!",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "128",
+                    "name": "The Equalizer"
+                  }
+                ]
+              },
+              {
+                "info": "4 times the healing from medics when active!",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "775",
+                    "name": "The Escape Plan"
+                  }
+                ]
+              },
+              {
+                "info": "Longer deploy and holster time removed",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "357",
+                    "name": "The Half-Zatoichi"
+                  }
+                ]
+              },
+              {
+                "info": "Melee Range Increased a bit",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "416",
+                    "name": "The Market Gardener"
+                  }
+                ]
+              },
+              {
+                "info": "You now capture at 3x",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "154",
+                    "name": "The Pain Train"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spy",
+        "slots": [
+          {
+            "name": "Secondary [Slot 0]",
+            "infos": [
+              {
+                "info": "You can now rocketjump higher",
+                "category": "Weapons",
+                "itemclass": "Spy",
+                "slot": "Secondary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "15129",
+                    "name": "Coffin Nail"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

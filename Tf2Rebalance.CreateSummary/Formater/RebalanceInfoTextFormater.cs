@@ -2,7 +2,7 @@
 
 namespace Tf2Rebalance.CreateSummary
 {
-    public class RebalanceInfoTextFormater : RebalanceInfoFormaterBase
+    public class RebalanceInfoTextFormater : RebalanceInfoFormaterIterativeBase
     {
         private StringBuilder _builder;
 
@@ -26,9 +26,9 @@ namespace Tf2Rebalance.CreateSummary
             _builder.AppendLine(text);
         }
 
-        protected override void Write(RebalanceInfo weapon)
+        protected override void Write(string weaponnames, Info weapon)
         {
-            _builder.AppendLine(weapon.name);
+            _builder.AppendLine(weaponnames);
             _builder.AppendLine(weapon.info);
             _builder.AppendLine();
         }

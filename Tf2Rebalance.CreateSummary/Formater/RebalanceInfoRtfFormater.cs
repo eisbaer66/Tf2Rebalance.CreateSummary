@@ -2,7 +2,7 @@
 
 namespace Tf2Rebalance.CreateSummary
 {
-    public class RebalanceInfoRtfFormater : RebalanceInfoFormaterBase
+    public class RebalanceInfoRtfFormater : RebalanceInfoFormaterIterativeBase
     {
         private RtfDocument _document;
 
@@ -35,12 +35,12 @@ namespace Tf2Rebalance.CreateSummary
             paragraph.Text.Append(text);
         }
 
-        protected override void Write(RebalanceInfo weapon)
+        protected override void Write(string weaponnames, Info weapon)
         {
             RtfParagraph paragraphWeaponName = _document.addParagraph();
             RtfCharFormat formatWeaponName = paragraphWeaponName.addCharFormat();
             formatWeaponName.FontStyle.addStyle(FontStyleFlag.Bold);
-            paragraphWeaponName.Text.Append(weapon.name);
+            paragraphWeaponName.Text.Append(weaponnames);
 
             RtfParagraph paragraph = _document.addParagraph();
             RtfCharFormat format = paragraph.addCharFormat();

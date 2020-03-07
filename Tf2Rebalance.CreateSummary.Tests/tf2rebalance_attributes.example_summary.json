@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Weapons",
+    "classes": [
+      {
+        "name": "Demoman",
+        "slots": [
+          {
+            "name": "Melee [Slot 2]",
+            "infos": [
+              {
+                "info": "Longer deploy and holster time removed",
+                "category": "Weapons",
+                "itemclass": "Demoman",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "1082",
+                    "name": "Festive Eyelander"
+                  },
+                  {
+                    "id": "266",
+                    "name": "Horseless Headless Horsemann's Headtaker"
+                  },
+                  {
+                    "id": "482",
+                    "name": "Nessie's Nine Iron"
+                  },
+                  {
+                    "id": "132",
+                    "name": "The Eyelander"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soldier",
+        "slots": [
+          {
+            "name": "Primary [Slot 0]",
+            "infos": [
+              {
+                "info": "Direct Hit:\r\n- 25% jump height.\r\n- -50% less clip size.",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "127",
+                    "name": "The Direct Hit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

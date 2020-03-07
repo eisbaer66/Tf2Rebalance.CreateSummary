@@ -32,10 +32,10 @@ namespace Tf2Rebalance.CreateSummary.Tests
             string input = File.ReadAllText(inputFilename);
             string expectedOutput = File.ReadAllText(expectedOutputFilename);
 
-            Converter converter = new Converter(_itemInfos);
+            Converter rebalanceInfoConverter = new Converter(_itemInfos);
             IRebalanceInfoFormater formater = new RebalanceInfoTextFormater();
 
-            IEnumerable<RebalanceInfo> rebalanceInfos = converter.Execute(input);
+            IEnumerable<RebalanceInfo> rebalanceInfos = rebalanceInfoConverter.Execute(input);
             string output = formater.Create(rebalanceInfos);
 
             Assert.AreEqual(expectedOutput, output);
@@ -44,15 +44,34 @@ namespace Tf2Rebalance.CreateSummary.Tests
         [TestMethod]
         [DataRow("tf2rebalance_attributes.example.txt", "tf2rebalance_attributes.example_summary.rtf")]
         [DataRow("higps.txt", "higps_summary.rtf")]
+        [DataRow("higps_withoutClasses.txt", "higps_withoutClasses_summary.rtf")]
         public void Rtf(string inputFilename, string expectedOutputFilename)
         {
             string input = File.ReadAllText(inputFilename);
             string expectedOutput = File.ReadAllText(expectedOutputFilename);
 
-            Converter converter = new Converter(_itemInfos);
+            Converter rebalanceInfoConverter = new Converter(_itemInfos);
             IRebalanceInfoFormater formater = new RebalanceInfoRtfFormater();
 
-            IEnumerable<RebalanceInfo> rebalanceInfos = converter.Execute(input);
+            IEnumerable<RebalanceInfo> rebalanceInfos = rebalanceInfoConverter.Execute(input);
+            string output = formater.Create(rebalanceInfos);
+
+            Assert.AreEqual(expectedOutput, output);
+        }
+
+        [TestMethod]
+        [DataRow("tf2rebalance_attributes.example.txt", "tf2rebalance_attributes.example_summary.json")]
+        [DataRow("higps.txt", "higps_summary.json")]
+        [DataRow("higps_withoutClasses.txt", "higps_withoutClasses_summary.json")]
+        public void GroupedJson(string inputFilename, string expectedOutputFilename)
+        {
+            string input = File.ReadAllText(inputFilename);
+            string expectedOutput = File.ReadAllText(expectedOutputFilename);
+
+            Converter rebalanceInfoConverter = new Converter(_itemInfos);
+            IRebalanceInfoFormater formater = new RebalanceInfoGroupedJsonFormater();
+
+            IEnumerable<RebalanceInfo> rebalanceInfos = rebalanceInfoConverter.Execute(input);
             string output = formater.Create(rebalanceInfos);
 
             Assert.AreEqual(expectedOutput, output);
