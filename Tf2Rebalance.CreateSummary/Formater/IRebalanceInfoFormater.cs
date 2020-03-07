@@ -6,5 +6,6 @@ namespace Tf2Rebalance.CreateSummary
     public interface IRebalanceInfoFormater
     {
         string Create(IEnumerable<RebalanceInfo> infos);
+        string FileExtension { get; }
     }
 }

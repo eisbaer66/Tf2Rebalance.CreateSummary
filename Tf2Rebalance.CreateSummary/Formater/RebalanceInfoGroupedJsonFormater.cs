@@ -8,6 +8,8 @@ namespace Tf2Rebalance.CreateSummary
     {
         private string _output;
 
+        public override string FileExtension => "json";
+
         protected override void Init()
         {
             

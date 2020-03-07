@@ -5,6 +5,7 @@ namespace Tf2Rebalance.CreateSummary
     public class RebalanceInfoTextFormater : RebalanceInfoFormaterIterativeBase
     {
         private StringBuilder _builder;
+        public override string FileExtension => "txt";
 
         protected override void Init()
         {

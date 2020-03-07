@@ -103,6 +103,8 @@ namespace Tf2Rebalance.CreateSummary
             return Finalize();
         }
 
+        public abstract string FileExtension { get; }
+
         protected abstract void Init();
         protected abstract void Process(IDictionary<string, Category> groupings);
         protected abstract string Finalize();

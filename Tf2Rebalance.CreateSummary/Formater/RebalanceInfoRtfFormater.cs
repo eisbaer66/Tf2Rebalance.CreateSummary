@@ -5,6 +5,7 @@ namespace Tf2Rebalance.CreateSummary
     public class RebalanceInfoRtfFormater : RebalanceInfoFormaterIterativeBase
     {
         private RtfDocument _document;
+        public override string FileExtension => "rtf";
 
         protected override void Init()
         {
