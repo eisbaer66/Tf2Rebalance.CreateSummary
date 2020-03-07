@@ -3,9 +3,9 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Tf2Rebalance.CreateSummary
+namespace Tf2Rebalance.CreateSummary.Formatter
 {
-    public abstract class RebalanceInfoFormaterIterativeBase : RebalanceInfoFormaterBase
+    public abstract class RebalanceInfoFormatterIterativeBase : RebalanceInfoFormatterBase
     {
         protected override void Process(IDictionary<string, Category> groupings)
         {

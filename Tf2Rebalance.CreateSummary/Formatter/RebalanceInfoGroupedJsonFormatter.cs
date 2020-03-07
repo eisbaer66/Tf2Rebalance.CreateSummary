@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using Newtonsoft.Json;
 
-namespace Tf2Rebalance.CreateSummary
+namespace Tf2Rebalance.CreateSummary.Formatter
 {
-    public class RebalanceInfoGroupedJsonFormater : RebalanceInfoFormaterBase
+    public class RebalanceInfoGroupedJsonFormatter : RebalanceInfoFormatterBase
     {
         private string _output;
 

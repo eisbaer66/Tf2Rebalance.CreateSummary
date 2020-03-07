@@ -1,8 +1,8 @@
 ﻿using System.Text;
 
-namespace Tf2Rebalance.CreateSummary
+namespace Tf2Rebalance.CreateSummary.Formatter
 {
-    public class RebalanceInfoTextFormater : RebalanceInfoFormaterIterativeBase
+    public class RebalanceInfoTextFormatter : RebalanceInfoFormatterIterativeBase
     {
         private StringBuilder _builder;
         public override string FileExtension => "txt";

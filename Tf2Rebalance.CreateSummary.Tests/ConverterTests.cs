@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Serilog;
+using Tf2Rebalance.CreateSummary.Formatter;
 
 namespace Tf2Rebalance.CreateSummary.Tests
 {
@@ -33,10 +34,10 @@ namespace Tf2Rebalance.CreateSummary.Tests
             string expectedOutput = File.ReadAllText(expectedOutputFilename);
 
             Converter rebalanceInfoConverter = new Converter(_itemInfos);
-            IRebalanceInfoFormater formater = new RebalanceInfoTextFormater();
+            IRebalanceInfoFormatter formatter = new RebalanceInfoTextFormatter();
 
             IEnumerable<RebalanceInfo> rebalanceInfos = rebalanceInfoConverter.Execute(input);
-            string output = formater.Create(rebalanceInfos);
+            string output = formatter.Create(rebalanceInfos);
 
             Assert.AreEqual(expectedOutput, output);
         }
@@ -51,10 +52,10 @@ namespace Tf2Rebalance.CreateSummary.Tests
             string expectedOutput = File.ReadAllText(expectedOutputFilename);
 
             Converter rebalanceInfoConverter = new Converter(_itemInfos);
-            IRebalanceInfoFormater formater = new RebalanceInfoRtfFormater();
+            IRebalanceInfoFormatter formatter = new RebalanceInfoRtfFormatter();
 
             IEnumerable<RebalanceInfo> rebalanceInfos = rebalanceInfoConverter.Execute(input);
-            string output = formater.Create(rebalanceInfos);
+            string output = formatter.Create(rebalanceInfos);
 
             Assert.AreEqual(expectedOutput, output);
         }
@@ -69,10 +70,10 @@ namespace Tf2Rebalance.CreateSummary.Tests
             string expectedOutput = File.ReadAllText(expectedOutputFilename);
 
             Converter rebalanceInfoConverter = new Converter(_itemInfos);
-            IRebalanceInfoFormater formater = new RebalanceInfoGroupedJsonFormater();
+            IRebalanceInfoFormatter formatter = new RebalanceInfoGroupedJsonFormatter();
 
             IEnumerable<RebalanceInfo> rebalanceInfos = rebalanceInfoConverter.Execute(input);
-            string output = formater.Create(rebalanceInfos);
+            string output = formatter.Create(rebalanceInfos);
 
             File.WriteAllText(expectedOutputFilename, output);
             Assert.AreEqual(expectedOutput, output);

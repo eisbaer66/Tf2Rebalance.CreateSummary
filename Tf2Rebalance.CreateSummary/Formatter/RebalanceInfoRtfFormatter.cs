@@ -1,8 +1,8 @@
 ﻿using RtfWriter.Standard;
 
-namespace Tf2Rebalance.CreateSummary
+namespace Tf2Rebalance.CreateSummary.Formatter
 {
-    public class RebalanceInfoRtfFormater : RebalanceInfoFormaterIterativeBase
+    public class RebalanceInfoRtfFormatter : RebalanceInfoFormatterIterativeBase
     {
         private RtfDocument _document;
         public override string FileExtension => "rtf";

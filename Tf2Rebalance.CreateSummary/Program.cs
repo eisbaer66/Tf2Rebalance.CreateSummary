@@ -5,6 +5,7 @@ using McMaster.Extensions.CommandLineUtils;
 using Serilog;
 using Serilog.Events;
 using Serilog.Formatting.Compact;
+using Tf2Rebalance.CreateSummary.Formatter;
 
 namespace Tf2Rebalance.CreateSummary
 {
@@ -66,7 +67,7 @@ namespace Tf2Rebalance.CreateSummary
                 Files = new[] { file };
             }
 
-            IRebalanceInfoFormater formatter = CreateFormatter(FormatterOption);
+            IRebalanceInfoFormatter formatter = CreateFormatter(FormatterOption);
             Execute(Files, formatter);
 
             if (!exitSilently)
@@ -77,24 +78,24 @@ namespace Tf2Rebalance.CreateSummary
             return 0;
         }
 
-        private static IRebalanceInfoFormater CreateFormatter(FormatterOption option)
+        private static IRebalanceInfoFormatter CreateFormatter(FormatterOption option)
         {
             Log.Debug("using {FormatterOption}", option);
             switch (option)
             {
                 case FormatterOption.Rft:
-                    return new RebalanceInfoRtfFormater();
+                    return new RebalanceInfoRtfFormatter();
                 case FormatterOption.Text:
-                    return new RebalanceInfoTextFormater();
+                    return new RebalanceInfoTextFormatter();
                 case FormatterOption.GroupedJson:
-                    return new RebalanceInfoGroupedJsonFormater();
+                    return new RebalanceInfoGroupedJsonFormatter();
                 default:
-                    Log.Warning("unknown FormatterOption {FormatterOption}. using RebalanceInfoRtfFormater", option);
-                    return new RebalanceInfoRtfFormater();
+                    Log.Warning("unknown FormatterOption {FormatterOption}. using RebalanceInfoRtfFormatter", option);
+                    return new RebalanceInfoRtfFormatter();
             }
         }
 
-        private static void Execute(IList<string> files, IRebalanceInfoFormater formatter)
+        private static void Execute(IList<string> files, IRebalanceInfoFormatter formatter)
         {
             IDictionary<string, List<ItemInfo>> weaponNames = AlliedModsWiki.GetItemInfos();
             Converter                           converter   = new Converter(weaponNames);
@@ -107,21 +108,21 @@ namespace Tf2Rebalance.CreateSummary
             Log.Information("finished creating summaries for {ConfigFileCount} configs", files.Count);
         }
 
-        private static void CreateSummary(string filename, Converter converter, IRebalanceInfoFormater formater)
+        private static void CreateSummary(string filename, Converter converter, IRebalanceInfoFormatter formatter)
         {
             Log.Information("reading config from {ConfigFileName}", filename);
 
             string input = File.ReadAllText(filename);
 
             IEnumerable<RebalanceInfo> rebalanceInfos = converter.Execute(input);
-            string output = formater.Create(rebalanceInfos);
+            string output = formatter.Create(rebalanceInfos);
             if (string.IsNullOrEmpty(output))
             {
                 Log.Error("input could not be read skipping summary");
                 return;
             }
 
-            string outputFilename = filename.Replace(Path.GetFileName(filename), Path.GetFileNameWithoutExtension(filename) + "_summary." + formater.FileExtension);
+            string outputFilename = filename.Replace(Path.GetFileName(filename), Path.GetFileNameWithoutExtension(filename) + "_summary." + formatter.FileExtension);
 
             Log.Information("writing summary to {SummaryFileName}", outputFilename);
             File.WriteAllText(outputFilename, output);

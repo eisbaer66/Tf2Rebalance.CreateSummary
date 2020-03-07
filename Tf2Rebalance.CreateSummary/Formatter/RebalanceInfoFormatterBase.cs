@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
 
-namespace Tf2Rebalance.CreateSummary
+namespace Tf2Rebalance.CreateSummary.Formatter
 {
     public class Attribute
     {
@@ -45,7 +44,7 @@ namespace Tf2Rebalance.CreateSummary
         public IDictionary<string, Class> classes { get; set; }
     }
 
-    public abstract class RebalanceInfoFormaterBase : IRebalanceInfoFormater
+    public abstract class RebalanceInfoFormatterBase : IRebalanceInfoFormatter
     {
         protected string SlotPattern = @"\[Slot (\d)\]";
 
