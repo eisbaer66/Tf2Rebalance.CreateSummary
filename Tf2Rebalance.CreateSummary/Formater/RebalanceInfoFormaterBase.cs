@@ -5,6 +5,11 @@ using System.Text.RegularExpressions;
 
 namespace Tf2Rebalance.CreateSummary
 {
+    public class Attribute
+    {
+        public string id      { get; set; }
+        public string value      { get; set; }
+    }
     public class Weapon
     {
         public string id      { get; set; }
@@ -18,6 +23,8 @@ namespace Tf2Rebalance.CreateSummary
         public string slot      { get; set; }
 
         public IEnumerable<Weapon> weapons { get; set; }
+
+        public IEnumerable<Attribute> attributes { get; set; }
     }
 
     public class Slot
@@ -75,7 +82,12 @@ namespace Tf2Rebalance.CreateSummary
                                                                                                                                                                          {
                                                                                                                                                                              id = w.id,
                                                                                                                                                                              name = w.name,
-                                                                                                                                                                         })
+                                                                                                                                                                         }),
+                                                                                                                                                 attributes = itemInfo.attributes.Select(a => new Attribute
+                                                                                                                                                                                              {
+                                                                                                                                                                                                  id = a.id,
+                                                                                                                                                                                                  value = a.value,
+                                                                                                                                                                                              })
                                                                                                                                              };
                                                                                                                                          })
                                                                              })

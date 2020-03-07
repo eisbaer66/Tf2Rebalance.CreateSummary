@@ -30,6 +30,16 @@
                     "id": "132",
                     "name": "The Eyelander"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "781",
+                    "value": "0"
+                  },
+                  {
+                    "id": "246",
+                    "value": "1.37"
+                  }
                 ]
               }
             ]
@@ -51,6 +61,16 @@
                   {
                     "id": "127",
                     "name": "The Direct Hit"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "326",
+                    "value": "1.25"
+                  },
+                  {
+                    "id": "3",
+                    "value": "1.50"
                   }
                 ]
               }

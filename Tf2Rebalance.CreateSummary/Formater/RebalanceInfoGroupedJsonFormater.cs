@@ -14,7 +14,10 @@ namespace Tf2Rebalance.CreateSummary
 
         protected override void Process(IEnumerable<Category> groupings)
         {
-            _output = JsonConvert.SerializeObject(groupings, Formatting.Indented);
+            _output = JsonConvert.SerializeObject(groupings, Formatting.Indented, new JsonSerializerSettings
+                                                                                  {
+                                                                                      NullValueHandling = NullValueHandling.Ignore,
+                                                                                  });
         }
 
         protected override string Finalize()

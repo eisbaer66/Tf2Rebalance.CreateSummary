@@ -3,20 +3,22 @@
     "name": "unknown",
     "classes": [
       {
-        "name": null,
         "slots": [
           {
-            "name": null,
             "infos": [
               {
                 "info": "pyro",
                 "category": "unknown",
-                "itemclass": null,
-                "slot": null,
                 "weapons": [
                   {
                     "id": "972  30474",
                     "name": "972  30474"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "16",
+                    "value": "10"
                   }
                 ]
               }
@@ -48,6 +50,20 @@
                   {
                     "id": "608",
                     "name": "The Bootlegger"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "26",
+                    "value": "50"
+                  },
+                  {
+                    "id": "246",
+                    "value": "10"
+                  },
+                  {
+                    "id": "788",
+                    "value": "1.75"
                   }
                 ]
               },
@@ -101,6 +117,12 @@
                     "id": "15142",
                     "name": "Warhawk"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "4",
+                    "value": "1.25"
+                  }
                 ]
               },
               {
@@ -112,6 +134,12 @@
                   {
                     "id": "1101",
                     "name": "The B.A.S.E. Jumper"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "326",
+                    "value": "2"
                   }
                 ]
               },
@@ -125,6 +153,12 @@
                     "id": "1151",
                     "name": "The Iron Bomber"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "787",
+                    "value": "0.25"
+                  }
                 ]
               },
               {
@@ -137,6 +171,20 @@
                     "id": "308",
                     "name": "The Loch-n-Load"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "4",
+                    "value": "0.75"
+                  },
+                  {
+                    "id": "5",
+                    "value": "0.25"
+                  },
+                  {
+                    "id": "127",
+                    "value": "0"
+                  }
                 ]
               },
               {
@@ -148,6 +196,12 @@
                   {
                     "id": "996",
                     "name": "The Loose Cannon"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "791",
+                    "value": "3000"
                   }
                 ]
               }
@@ -258,6 +312,12 @@
                     "id": "15113",
                     "name": "Sweet Dreams"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "88",
+                    "value": "24"
+                  }
                 ]
               },
               {
@@ -274,6 +334,12 @@
                     "id": "131",
                     "name": "The Chargin' Targe"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "202",
+                    "value": "3"
+                  }
                 ]
               },
               {
@@ -285,6 +351,20 @@
                   {
                     "id": "265",
                     "name": "Sticky Jumper"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "88",
+                    "value": "32"
+                  },
+                  {
+                    "id": "6",
+                    "value": "0.25"
+                  },
+                  {
+                    "id": "97",
+                    "value": "0.25"
                   }
                 ]
               },
@@ -298,6 +378,12 @@
                     "id": "1150",
                     "name": "The Quickiebomb Launcher"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "126",
+                    "value": "-100"
+                  }
                 ]
               },
               {
@@ -309,6 +395,12 @@
                   {
                     "id": "130",
                     "name": "The Scottish Resistance"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "88",
+                    "value": "32"
                   }
                 ]
               },
@@ -322,6 +414,12 @@
                     "id": "406",
                     "name": "The Splendid Screen"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "202",
+                    "value": "6"
+                  }
                 ]
               },
               {
@@ -333,6 +431,16 @@
                   {
                     "id": "1099",
                     "name": "The Tide Turner"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "202",
+                    "value": "9"
+                  },
+                  {
+                    "id": "676",
+                    "value": "0"
                   }
                 ]
               }
@@ -379,6 +487,16 @@
                     "id": "172",
                     "name": "The Scotsman's Skullcutter"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "781",
+                    "value": "0"
+                  },
+                  {
+                    "id": "246",
+                    "value": "1.37"
+                  }
                 ]
               },
               {
@@ -391,6 +509,12 @@
                     "id": "154",
                     "name": "The Pain Train"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "68",
+                    "value": "2"
+                  }
                 ]
               },
               {
@@ -402,6 +526,16 @@
                   {
                     "id": "307",
                     "name": "Ullapool Caber"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "15",
+                    "value": "100"
+                  },
+                  {
+                    "id": "207",
+                    "value": "1000"
                   }
                 ]
               }
@@ -424,6 +558,20 @@
                   {
                     "id": "1153",
                     "name": "Panic Attack"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "808",
+                    "value": "0"
+                  },
+                  {
+                    "id": "6",
+                    "value": "0.1"
+                  },
+                  {
+                    "id": "2",
+                    "value": "0.6"
                   }
                 ]
               }
@@ -551,6 +699,12 @@
                     "id": "15031",
                     "name": "War Room"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "16",
+                    "value": "2"
+                  }
                 ]
               },
               {
@@ -563,6 +717,12 @@
                     "id": "41",
                     "name": "Natascha"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "32",
+                    "value": "10000"
+                  }
                 ]
               },
               {
@@ -574,6 +734,16 @@
                   {
                     "id": "312",
                     "name": "The Brass Beast"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "45",
+                    "value": "5"
+                  },
+                  {
+                    "id": "36",
+                    "value": "6"
                   }
                 ]
               },
@@ -591,6 +761,12 @@
                     "id": "832",
                     "name": "The Huo-Long Heater (Genuine)"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "20",
+                    "value": "1"
+                  }
                 ]
               },
               {
@@ -602,6 +778,12 @@
                   {
                     "id": "424",
                     "name": "Tomislav"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "183",
+                    "value": "10"
                   }
                 ]
               }
@@ -628,6 +810,12 @@
                     "id": "42",
                     "name": "Sandvich"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "876",
+                    "value": "1000"
+                  }
                 ]
               },
               {
@@ -648,6 +836,16 @@
                     "id": "159",
                     "name": "The Dalokohs Bar"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "874",
+                    "value": "0.01"
+                  },
+                  {
+                    "id": "547",
+                    "value": "0.01"
+                  }
                 ]
               },
               {
@@ -659,6 +857,20 @@
                   {
                     "id": "1153",
                     "name": "Panic Attack"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "808",
+                    "value": "0"
+                  },
+                  {
+                    "id": "6",
+                    "value": "0.1"
+                  },
+                  {
+                    "id": "2",
+                    "value": "0.6"
                   }
                 ]
               },
@@ -672,6 +884,12 @@
                     "id": "311",
                     "name": "The Buffalo Steak Sandvich"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "798",
+                    "value": "0.3"
+                  }
                 ]
               },
               {
@@ -683,6 +901,40 @@
                   {
                     "id": "425",
                     "name": "The Family Business"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "4",
+                    "value": "1"
+                  },
+                  {
+                    "id": "6",
+                    "value": "1"
+                  },
+                  {
+                    "id": "2",
+                    "value": "1.4"
+                  },
+                  {
+                    "id": "326",
+                    "value": "1.4"
+                  },
+                  {
+                    "id": "107",
+                    "value": "1.739130434782609"
+                  },
+                  {
+                    "id": "125",
+                    "value": "-175"
+                  },
+                  {
+                    "id": "610",
+                    "value": "3"
+                  },
+                  {
+                    "id": "77",
+                    "value": "0"
                   }
                 ]
               }
@@ -709,6 +961,12 @@
                     "id": "195",
                     "name": "Fists (Renamed/Strange)"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "178",
+                    "value": "0.80"
+                  }
                 ]
               },
               {
@@ -725,6 +983,12 @@
                     "id": "1100",
                     "name": "The Bread Bite"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "855",
+                    "value": "200"
+                  }
                 ]
               },
               {
@@ -736,6 +1000,12 @@
                   {
                     "id": "426",
                     "name": "The Eviction Notice"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "737",
+                    "value": "15"
                   }
                 ]
               },
@@ -749,6 +1019,16 @@
                     "id": "656",
                     "name": "The Holiday Punch"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "363",
+                    "value": "0"
+                  },
+                  {
+                    "id": "869",
+                    "value": "1"
+                  }
                 ]
               },
               {
@@ -761,6 +1041,12 @@
                     "id": "43",
                     "name": "The Killing Gloves of Boxing"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "31",
+                    "value": "15"
+                  }
                 ]
               },
               {
@@ -772,6 +1058,16 @@
                   {
                     "id": "310",
                     "name": "Warrior's Spirit"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "215",
+                    "value": "500"
+                  },
+                  {
+                    "id": "216",
+                    "value": "1000"
                   }
                 ]
               }
@@ -794,6 +1090,12 @@
                   {
                     "id": "15123",
                     "name": "Coffin Nail"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "16",
+                    "value": "2"
                   }
                 ]
               }
@@ -819,6 +1121,12 @@
                   {
                     "id": "1143",
                     "name": "Festive Bonesaw"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "149",
+                    "value": "10"
                   }
                 ]
               }
@@ -878,6 +1186,12 @@
                     "id": "963",
                     "name": "Silver Botkiller Flame Thrower Mk.II"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "16",
+                    "value": "10"
+                  }
                 ]
               }
             ]
@@ -895,6 +1209,20 @@
                     "id": "1180",
                     "name": "Gas Passer"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "278",
+                    "value": "0.001"
+                  },
+                  {
+                    "id": "6",
+                    "value": "0.25"
+                  },
+                  {
+                    "id": "874",
+                    "value": "0.001"
+                  }
                 ]
               },
               {
@@ -907,6 +1235,20 @@
                     "id": "1153",
                     "name": "Panic Attack"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "808",
+                    "value": "0"
+                  },
+                  {
+                    "id": "6",
+                    "value": "0.1"
+                  },
+                  {
+                    "id": "2",
+                    "value": "0.6"
+                  }
                 ]
               },
               {
@@ -918,6 +1260,20 @@
                   {
                     "id": "415",
                     "name": "The Reserve Shooter"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "179",
+                    "value": "1"
+                  },
+                  {
+                    "id": "106",
+                    "value": "0"
+                  },
+                  {
+                    "id": "4",
+                    "value": "0.25"
                   }
                 ]
               }
@@ -940,6 +1296,16 @@
                     "id": "192",
                     "name": "Fire Axe (Renamed/Strange)"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "340",
+                    "value": "1"
+                  },
+                  {
+                    "id": "26",
+                    "value": "10"
+                  }
                 ]
               }
             ]
@@ -961,6 +1327,16 @@
                   {
                     "id": "772",
                     "name": "Baby Face's Blaster"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "419",
+                    "value": "-1"
+                  },
+                  {
+                    "id": "733",
+                    "value": "-1"
                   }
                 ]
               },
@@ -1070,6 +1446,12 @@
                     "id": "15015",
                     "name": "Tartan Torpedo"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "737",
+                    "value": "1"
+                  }
                 ]
               },
               {
@@ -1081,6 +1463,12 @@
                   {
                     "id": "45",
                     "name": "Force-A-Nature"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "791",
+                    "value": "4000"
                   }
                 ]
               },
@@ -1094,6 +1482,12 @@
                     "id": "1103",
                     "name": "The Back Scatter"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "179",
+                    "value": "1"
+                  }
                 ]
               },
               {
@@ -1106,6 +1500,16 @@
                     "id": "220",
                     "name": "The Shortstop"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "536",
+                    "value": "100"
+                  },
+                  {
+                    "id": "6",
+                    "value": "0.25"
+                  }
                 ]
               },
               {
@@ -1117,6 +1521,16 @@
                   {
                     "id": "448",
                     "name": "The Soda Popper"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "3",
+                    "value": "0.1"
+                  },
+                  {
+                    "id": "97",
+                    "value": "0.15"
                   }
                 ]
               }
@@ -1139,6 +1553,20 @@
                     "id": "1121",
                     "name": "Mutated Milk"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "278",
+                    "value": "0.001"
+                  },
+                  {
+                    "id": "6",
+                    "value": "0.25"
+                  },
+                  {
+                    "id": "874",
+                    "value": "0.001"
+                  }
                 ]
               }
             ]
@@ -1155,6 +1583,12 @@
                   {
                     "id": "349",
                     "name": "Sun-on-a-Stick"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "795",
+                    "value": "2"
                   }
                 ]
               }
@@ -1286,6 +1720,16 @@
                     "id": "15072",
                     "name": "Wildwood"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "280",
+                    "value": "2"
+                  },
+                  {
+                    "id": "103",
+                    "value": "2.5"
+                  }
                 ]
               },
               {
@@ -1306,6 +1750,12 @@
                     "id": "56",
                     "name": "The Huntsman"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "280",
+                    "value": "1"
+                  }
                 ]
               },
               {
@@ -1322,6 +1772,16 @@
                     "id": "526",
                     "name": "The Machina"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "304",
+                    "value": "20.00222222222222"
+                  },
+                  {
+                    "id": "137",
+                    "value": "-1"
+                  }
                 ]
               },
               {
@@ -1333,6 +1793,12 @@
                   {
                     "id": "402",
                     "name": "The Bazaar Bargain"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "390",
+                    "value": "1.3"
                   }
                 ]
               },
@@ -1346,6 +1812,28 @@
                     "id": "752",
                     "name": "The Hitman's Heatmaker"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "6",
+                    "value": "0.05"
+                  },
+                  {
+                    "id": "280",
+                    "value": "8"
+                  },
+                  {
+                    "id": "851",
+                    "value": "10"
+                  },
+                  {
+                    "id": "326",
+                    "value": "3"
+                  },
+                  {
+                    "id": "37",
+                    "value": "10"
+                  }
                 ]
               },
               {
@@ -1357,6 +1845,12 @@
                   {
                     "id": "230",
                     "name": "The Sydney Sleeper"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "266",
+                    "value": "1"
                   }
                 ]
               }
@@ -1419,6 +1913,16 @@
                     "id": "15001",
                     "name": "Woodsy Widowmaker"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "301",
+                    "value": "1"
+                  },
+                  {
+                    "id": "4",
+                    "value": "8"
+                  }
                 ]
               },
               {
@@ -1431,6 +1935,12 @@
                     "id": "642",
                     "name": "Cozy Camper"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "57",
+                    "value": "100"
+                  }
                 ]
               },
               {
@@ -1442,6 +1952,12 @@
                   {
                     "id": "231",
                     "name": "Darwin's Danger Shield"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "60",
+                    "value": "0"
                   }
                 ]
               },
@@ -1463,6 +1979,20 @@
                     "id": "1105",
                     "name": "The Self-Aware Beauty Mark"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "278",
+                    "value": "0.001"
+                  },
+                  {
+                    "id": "6",
+                    "value": "0.25"
+                  },
+                  {
+                    "id": "874",
+                    "value": "0.001"
+                  }
                 ]
               },
               {
@@ -1475,6 +2005,12 @@
                     "id": "751",
                     "name": "The Cleaner's Carbine"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "779",
+                    "value": "60"
+                  }
                 ]
               },
               {
@@ -1486,6 +2022,12 @@
                   {
                     "id": "57",
                     "name": "The Razorback"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "874",
+                    "value": "0.001"
                   }
                 ]
               }
@@ -1504,6 +2046,12 @@
                     "id": "232",
                     "name": "The Bushwacka"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "736",
+                    "value": "3"
+                  }
                 ]
               },
               {
@@ -1516,6 +2064,16 @@
                     "id": "401",
                     "name": "The Shahanshah"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "225",
+                    "value": "0.1"
+                  },
+                  {
+                    "id": "224",
+                    "value": "2"
+                  }
                 ]
               },
               {
@@ -1527,6 +2085,12 @@
                   {
                     "id": "171",
                     "name": "The Tribalman's Shiv"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "149",
+                    "value": "30"
                   }
                 ]
               }
@@ -1674,6 +2238,12 @@
                     "id": "15006",
                     "name": "Woodland Warrior"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "58",
+                    "value": "2"
+                  }
                 ]
               }
             ]
@@ -1703,6 +2273,12 @@
                     "id": "354",
                     "name": "The Concheror"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "319",
+                    "value": "3"
+                  }
                 ]
               },
               {
@@ -1714,6 +2290,12 @@
                   {
                     "id": "133",
                     "name": "Gunboats"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "107",
+                    "value": "1.25"
                   }
                 ]
               },
@@ -1727,6 +2309,20 @@
                     "id": "1153",
                     "name": "Panic Attack"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "808",
+                    "value": "0"
+                  },
+                  {
+                    "id": "6",
+                    "value": "0.1"
+                  },
+                  {
+                    "id": "2",
+                    "value": "0.6"
+                  }
                 ]
               },
               {
@@ -1738,6 +2334,12 @@
                   {
                     "id": "1101",
                     "name": "The B.A.S.E. Jumper"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "326",
+                    "value": "2"
                   }
                 ]
               },
@@ -1751,6 +2353,12 @@
                     "id": "444",
                     "name": "The Mantreads"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "138",
+                    "value": "10000"
+                  }
                 ]
               },
               {
@@ -1763,6 +2371,20 @@
                     "id": "415",
                     "name": "The Reserve Shooter"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "179",
+                    "value": "1"
+                  },
+                  {
+                    "id": "106",
+                    "value": "0"
+                  },
+                  {
+                    "id": "4",
+                    "value": "0.25"
+                  }
                 ]
               },
               {
@@ -1774,6 +2396,12 @@
                   {
                     "id": "442",
                     "name": "The Righteous Bison"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "6",
+                    "value": "0.1"
                   }
                 ]
               }
@@ -1796,6 +2424,12 @@
                     "id": "196",
                     "name": "Shovel (Renamed/Strange)"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "619",
+                    "value": "1"
+                  }
                 ]
               },
               {
@@ -1807,6 +2441,16 @@
                   {
                     "id": "447",
                     "name": "The Disciplinary Action"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "6",
+                    "value": "0.25"
+                  },
+                  {
+                    "id": "1",
+                    "value": "0.25"
                   }
                 ]
               },
@@ -1820,6 +2464,12 @@
                     "id": "128",
                     "name": "The Equalizer"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "853",
+                    "value": "1.50"
+                  }
                 ]
               },
               {
@@ -1831,6 +2481,12 @@
                   {
                     "id": "775",
                     "name": "The Escape Plan"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "740",
+                    "value": "4"
                   }
                 ]
               },
@@ -1844,6 +2500,16 @@
                     "id": "357",
                     "name": "The Half-Zatoichi"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "781",
+                    "value": "0"
+                  },
+                  {
+                    "id": "246",
+                    "value": "1.37"
+                  }
                 ]
               },
               {
@@ -1856,6 +2522,16 @@
                     "id": "416",
                     "name": "The Market Gardener"
                   }
+                ],
+                "attributes": [
+                  {
+                    "id": "264",
+                    "value": "5"
+                  },
+                  {
+                    "id": "409",
+                    "value": "1"
+                  }
                 ]
               },
               {
@@ -1867,6 +2543,12 @@
                   {
                     "id": "154",
                     "name": "The Pain Train"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "68",
+                    "value": "2"
                   }
                 ]
               }
@@ -1889,6 +2571,12 @@
                   {
                     "id": "15129",
                     "name": "Coffin Nail"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "58",
+                    "value": "2"
                   }
                 ]
               }
