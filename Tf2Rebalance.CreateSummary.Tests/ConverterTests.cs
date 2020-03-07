@@ -74,6 +74,7 @@ namespace Tf2Rebalance.CreateSummary.Tests
             IEnumerable<RebalanceInfo> rebalanceInfos = rebalanceInfoConverter.Execute(input);
             string output = formater.Create(rebalanceInfos);
 
+            File.WriteAllText(expectedOutputFilename, output);
             Assert.AreEqual(expectedOutput, output);
         }
     }

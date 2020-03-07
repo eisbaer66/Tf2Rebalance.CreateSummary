@@ -1,10 +1,10 @@
-[
-  {
+{
+  "Classes": {
     "name": "Classes",
-    "classes": [
-      {
-        "slots": [
-          {
+    "classes": {
+      "unknown": {
+        "slots": {
+          "unknown": {
             "infos": [
               {
                 "info": "Reduced build and upgrade cost of teleporters by 50%",
@@ -24,16 +24,16 @@
               }
             ]
           }
-        ]
+        }
       }
-    ]
+    }
   },
-  {
+  "unknown": {
     "name": "unknown",
-    "classes": [
-      {
-        "slots": [
-          {
+    "classes": {
+      "unknown": {
+        "slots": {
+          "unknown": {
             "infos": [
               {
                 "info": "pyro",
@@ -53,17 +53,17 @@
               }
             ]
           }
-        ]
+        }
       }
-    ]
+    }
   },
-  {
+  "Weapons": {
     "name": "Weapons",
-    "classes": [
-      {
+    "classes": {
+      "Demoman": {
         "name": "Demoman",
-        "slots": [
-          {
+        "slots": {
+          "Primary [Slot 0]": {
             "name": "Primary [Slot 0]",
             "infos": [
               {
@@ -236,7 +236,7 @@
               }
             ]
           },
-          {
+          "Secondary [Slot 1]": {
             "name": "Secondary [Slot 1]",
             "infos": [
               {
@@ -475,7 +475,7 @@
               }
             ]
           },
-          {
+          "Melee [Slot 2]": {
             "name": "Melee [Slot 2]",
             "infos": [
               {
@@ -570,12 +570,12 @@
               }
             ]
           }
-        ]
+        }
       },
-      {
+      "Engineer": {
         "name": "Engineer",
-        "slots": [
-          {
+        "slots": {
+          "Primary [Slot 0]": {
             "name": "Primary [Slot 0]",
             "infos": [
               {
@@ -606,12 +606,12 @@
               }
             ]
           }
-        ]
+        }
       },
-      {
+      "Heavy": {
         "name": "Heavy",
-        "slots": [
-          {
+        "slots": {
+          "Primary [Slot 0]": {
             "name": "Primary [Slot 0]",
             "infos": [
               {
@@ -818,7 +818,7 @@
               }
             ]
           },
-          {
+          "Secondary [Slot 1]": {
             "name": "Secondary [Slot 1]",
             "infos": [
               {
@@ -969,7 +969,7 @@
               }
             ]
           },
-          {
+          "Melee [Slot 2]": {
             "name": "Melee [Slot 2]",
             "infos": [
               {
@@ -1102,12 +1102,12 @@
               }
             ]
           }
-        ]
+        }
       },
-      {
+      "Medic": {
         "name": "Medic",
-        "slots": [
-          {
+        "slots": {
+          "Secondary [Slot 1]": {
             "name": "Secondary [Slot 1]",
             "infos": [
               {
@@ -1130,7 +1130,7 @@
               }
             ]
           },
-          {
+          "Melee [Slot 2]": {
             "name": "Melee [Slot 2]",
             "infos": [
               {
@@ -1161,12 +1161,12 @@
               }
             ]
           }
-        ]
+        }
       },
-      {
+      "Pyro": {
         "name": "Pyro",
-        "slots": [
-          {
+        "slots": {
+          "Primary [Slot 0]": {
             "name": "Primary [Slot 0]",
             "infos": [
               {
@@ -1225,7 +1225,7 @@
               }
             ]
           },
-          {
+          "Secondary [Slot 1]": {
             "name": "Secondary [Slot 1]",
             "infos": [
               {
@@ -1308,7 +1308,7 @@
               }
             ]
           },
-          {
+          "Melee [Slot 2]": {
             "name": "Melee [Slot 2]",
             "infos": [
               {
@@ -1339,12 +1339,12 @@
               }
             ]
           }
-        ]
+        }
       },
-      {
+      "Scout": {
         "name": "Scout",
-        "slots": [
-          {
+        "slots": {
+          "Primary [Slot 0]": {
             "name": "Primary [Slot 0]",
             "infos": [
               {
@@ -1565,7 +1565,7 @@
               }
             ]
           },
-          {
+          "Secondary [Slot 1]": {
             "name": "Secondary [Slot 1]",
             "infos": [
               {
@@ -1600,7 +1600,7 @@
               }
             ]
           },
-          {
+          "Melee [Slot 2]": {
             "name": "Melee [Slot 2]",
             "infos": [
               {
@@ -1623,12 +1623,12 @@
               }
             ]
           }
-        ]
+        }
       },
-      {
+      "Sniper": {
         "name": "Sniper",
-        "slots": [
-          {
+        "slots": {
+          "Primary [Slot 0]": {
             "name": "Primary [Slot 0]",
             "infos": [
               {
@@ -1885,7 +1885,7 @@
               }
             ]
           },
-          {
+          "Secondary [Slot 1]": {
             "name": "Secondary [Slot 1]",
             "infos": [
               {
@@ -2062,7 +2062,7 @@
               }
             ]
           },
-          {
+          "Melee [Slot 2]": {
             "name": "Melee [Slot 2]",
             "infos": [
               {
@@ -2125,12 +2125,12 @@
               }
             ]
           }
-        ]
+        }
       },
-      {
+      "Soldier": {
         "name": "Soldier",
-        "slots": [
-          {
+        "slots": {
+          "Primary [Slot 0]": {
             "name": "Primary [Slot 0]",
             "infos": [
               {
@@ -2277,7 +2277,7 @@
               }
             ]
           },
-          {
+          "Secondary [Slot 1]": {
             "name": "Secondary [Slot 1]",
             "infos": [
               {
@@ -2436,7 +2436,7 @@
               }
             ]
           },
-          {
+          "Melee [Slot 2]": {
             "name": "Melee [Slot 2]",
             "infos": [
               {
@@ -2583,12 +2583,12 @@
               }
             ]
           }
-        ]
+        }
       },
-      {
+      "Spy": {
         "name": "Spy",
-        "slots": [
-          {
+        "slots": {
+          "Secondary [Slot 0]": {
             "name": "Secondary [Slot 0]",
             "infos": [
               {
@@ -2611,8 +2611,8 @@
               }
             ]
           }
-        ]
+        }
       }
-    ]
+    }
   }
-]
+}

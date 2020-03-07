@@ -1,11 +1,11 @@
-[
-  {
+{
+  "Weapons": {
     "name": "Weapons",
-    "classes": [
-      {
+    "classes": {
+      "Demoman": {
         "name": "Demoman",
-        "slots": [
-          {
+        "slots": {
+          "Melee [Slot 2]": {
             "name": "Melee [Slot 2]",
             "infos": [
               {
@@ -44,12 +44,12 @@
               }
             ]
           }
-        ]
+        }
       },
-      {
+      "Soldier": {
         "name": "Soldier",
-        "slots": [
-          {
+        "slots": {
+          "Primary [Slot 0]": {
             "name": "Primary [Slot 0]",
             "infos": [
               {
@@ -76,8 +76,8 @@
               }
             ]
           }
-        ]
+        }
       }
-    ]
+    }
   }
-]
+}

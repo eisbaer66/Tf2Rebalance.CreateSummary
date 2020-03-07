@@ -7,18 +7,18 @@ namespace Tf2Rebalance.CreateSummary
 {
     public abstract class RebalanceInfoFormaterIterativeBase : RebalanceInfoFormaterBase
     {
-        protected override void Process(IEnumerable<Category> groupings)
+        protected override void Process(IDictionary<string, Category> groupings)
         {
-            foreach (var category in groupings)
+            foreach (var category in groupings.Values)
             {
                 WriteCategory(category.name);
-                foreach (var @class in category.classes)
+                foreach (var @class in category.classes.Values)
                 {
                     string itemclass = @class.name;
                     if (!string.IsNullOrEmpty(itemclass))
                         WriteClass(itemclass);
 
-                    foreach (var slot in @class.slots)
+                    foreach (var slot in @class.slots.Values)
                     {
                         string slotname = slot.name;
                         if (!string.IsNullOrEmpty(slotname))

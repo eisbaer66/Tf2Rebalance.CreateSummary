@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Newtonsoft.Json;
 
 namespace Tf2Rebalance.CreateSummary
@@ -12,12 +13,13 @@ namespace Tf2Rebalance.CreateSummary
             
         }
 
-        protected override void Process(IEnumerable<Category> groupings)
+        protected override void Process(IDictionary<string, Category> groupings)
         {
-            _output = JsonConvert.SerializeObject(groupings, Formatting.Indented, new JsonSerializerSettings
-                                                                                  {
-                                                                                      NullValueHandling = NullValueHandling.Ignore,
-                                                                                  });
+            var obj = groupings;
+            _output = JsonConvert.SerializeObject(obj, Formatting.Indented, new JsonSerializerSettings
+                                                                            {
+                                                                                NullValueHandling = NullValueHandling.Ignore,
+                                                                            });
         }
 
         protected override string Finalize()

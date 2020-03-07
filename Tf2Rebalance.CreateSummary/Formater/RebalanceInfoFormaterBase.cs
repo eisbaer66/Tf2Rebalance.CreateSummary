@@ -36,13 +36,13 @@ namespace Tf2Rebalance.CreateSummary
     public class Class
     {
         public string name { get; set; }
-        public IEnumerable<Slot> slots { get; set; }
+        public IDictionary<string, Slot> slots { get; set; }
     }
 
     public class Category
     {
         public string name { get; set; }
-        public IEnumerable<Class> classes { get; set; }
+        public IDictionary<string, Class> classes { get; set; }
     }
 
     public abstract class RebalanceInfoFormaterBase : IRebalanceInfoFormater
@@ -90,9 +90,12 @@ namespace Tf2Rebalance.CreateSummary
                                                                                                                                                                                               })
                                                                                                                                              };
                                                                                                                                          })
-                                                                             })
+                                                                                                              })
+                                                                                          .ToDictionary(s => s.name ?? "unknown")
                                                                          })
-                                   });
+                                                        .ToDictionary(c => c.name ?? "unknown")
+                                   })
+                .ToDictionary(c => c.name ?? "unknown");
 
             Init();
             Process(groupings);
@@ -101,7 +104,7 @@ namespace Tf2Rebalance.CreateSummary
         }
 
         protected abstract void Init();
-        protected abstract void Process(IEnumerable<Category> groupings);
+        protected abstract void Process(IDictionary<string, Category> groupings);
         protected abstract string Finalize();
 
         private string GetSlot(string slot)
