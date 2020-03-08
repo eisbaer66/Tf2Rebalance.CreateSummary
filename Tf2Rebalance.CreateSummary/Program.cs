@@ -13,6 +13,7 @@ namespace Tf2Rebalance.CreateSummary
     {
         Rft,
         Text,
+        Json,
         GroupedJson,
     }
 
@@ -22,7 +23,7 @@ namespace Tf2Rebalance.CreateSummary
     {
         private static ILogger Log = Serilog.Log.ForContext<Program>();
 
-        [Option("-f || --format", Description = "Output format: Rtf, Text or GroupedJson. Defaults to Rtf")]
+        [Option("-f || --format", Description = "Output format: Rtf, Text, Json or GroupedJson. Defaults to Rtf")]
         public FormatterOption FormatterOption { get; set; } = FormatterOption.Rft;
 
         [Argument(0, Description = "Enter the filenames (i.e. tf2rebalance.txt)")]
@@ -56,7 +57,6 @@ namespace Tf2Rebalance.CreateSummary
 
         private int OnExecuteAsync(CommandLineApplication app)
         {
-            throw new NotSupportedException();
             bool exitSilently = true;
             if (Files.Count == 0)
             {
@@ -87,6 +87,8 @@ namespace Tf2Rebalance.CreateSummary
                     return new RebalanceInfoRtfFormatter();
                 case FormatterOption.Text:
                     return new RebalanceInfoTextFormatter();
+                case FormatterOption.Json:
+                    return new RebalanceInfoJsonFormatter();
                 case FormatterOption.GroupedJson:
                     return new RebalanceInfoGroupedJsonFormatter();
                 default:
