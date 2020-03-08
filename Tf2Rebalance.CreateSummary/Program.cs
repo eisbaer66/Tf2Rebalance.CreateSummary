@@ -17,7 +17,7 @@ namespace Tf2Rebalance.CreateSummary
         GroupedJson,
     }
 
-    [Command(Name = "CreateSummary", Description = "Creates Summaries from tf2rebalance.txt files")]
+    [Command(Name = "Tf2Rebalance.CreateSummary", Description = "Creates Summaries from tf2rebalance_attributes.txt files.\r\ntry 'Tf2Rebalance.CreateSummary -f:rtf \"C:\\Path to\\tf2rebalance_attributes.txt\"'")]
     [HelpOption("-? | -h | --help")]
     class Program
     {
@@ -26,7 +26,7 @@ namespace Tf2Rebalance.CreateSummary
         [Option("-f || --format", Description = "Output format: Rtf, Text, Json or GroupedJson. Defaults to Rtf")]
         public FormatterOption FormatterOption { get; set; } = FormatterOption.Rft;
 
-        [Argument(0, Description = "Enter the filenames (i.e. tf2rebalance.txt)")]
+        [Argument(0, Description = "Enter the filenames (i.e. tf2rebalance_attributes.txt)")]
         public IList<string> Files { get; set; }
 
         static void Main(string[] args)
@@ -57,24 +57,17 @@ namespace Tf2Rebalance.CreateSummary
 
         private int OnExecuteAsync(CommandLineApplication app)
         {
-            bool exitSilently = true;
-            if (Files.Count == 0)
+            if (Files == null || Files.Count == 0)
             {
-                exitSilently = false;
-                string file = Prompt.GetString("provide a filename");
+                app.ShowHelp();
 
-                Log.Information("manually provided filename: {ManuallyProvidedFilename}", file);
-                Files = new[] { file };
+                Console.WriteLine("press enter to exit");
+                Console.ReadLine();
+                return 0;
             }
 
             IRebalanceInfoFormatter formatter = CreateFormatter(FormatterOption);
             Execute(Files, formatter);
-
-            if (!exitSilently)
-            {
-                Console.WriteLine("press enter to exit");
-                Console.ReadLine();
-            }
             return 0;
         }
 
