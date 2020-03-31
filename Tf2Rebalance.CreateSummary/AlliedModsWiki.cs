@@ -29,7 +29,7 @@ namespace Tf2Rebalance.CreateSummary
                     HtmlNode slotNode = FindPrevious(table.PreviousSibling, "h4", "h3");
                     HtmlNode classNode = FindPrevious((slotNode?? table).PreviousSibling, "h3", "h2");
                     HtmlNode categoryNode = FindPrevious((classNode?? slotNode ?? table).PreviousSibling, "h2");
-                    IEnumerable<HtmlNode> rowNodes = table.SelectNodes("./tr").Skip(1);
+                    IEnumerable<HtmlNode> rowNodes = table.SelectNodes("./tbody/tr").Skip(1);
                     return rowNodes.Select(row => new {
                         categoryNode,
                         classNode,
