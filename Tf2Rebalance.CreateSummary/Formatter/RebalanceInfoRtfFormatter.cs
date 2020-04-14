@@ -1,4 +1,5 @@
-﻿using RtfWriter.Standard;
+﻿using System.Collections.Generic;
+using RtfWriter.Standard;
 
 namespace Tf2Rebalance.CreateSummary.Formatter
 {
@@ -46,6 +47,17 @@ namespace Tf2Rebalance.CreateSummary.Formatter
             RtfParagraph paragraph = _document.addParagraph();
             RtfCharFormat format = paragraph.addCharFormat();
             paragraph.Text.AppendLine(weapon.info);
+
+            if (weapon.additionalFields == null)
+                return;
+
+            foreach (KeyValuePair<string, string> pair in weapon.additionalFields)
+            {
+                paragraph.Text.Append(pair.Key);
+                paragraph.Text.Append(": ");
+                paragraph.Text.Append(pair.Value);
+                paragraph.Text.AppendLine();
+            }
         }
 
         protected override string Finalize()

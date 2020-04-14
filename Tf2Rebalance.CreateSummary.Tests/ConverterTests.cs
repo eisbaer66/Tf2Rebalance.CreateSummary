@@ -46,6 +46,7 @@ namespace Tf2Rebalance.CreateSummary.Tests
         [DataRow("tf2rebalance_attributes.example.txt", "tf2rebalance_attributes.example_summary.rtf")]
         [DataRow("higps.txt", "higps_summary.rtf")]
         [DataRow("higps_withoutClasses.txt", "higps_withoutClasses_summary.rtf")]
+        [DataRow("additionalFields.txt", "additionalFields_summary.rtf")]
         public void Rtf(string inputFilename, string expectedOutputFilename)
         {
             string input = File.ReadAllText(inputFilename);
@@ -57,6 +58,7 @@ namespace Tf2Rebalance.CreateSummary.Tests
             IEnumerable<RebalanceInfo> rebalanceInfos = rebalanceInfoConverter.Execute(input);
             string output = formatter.Create(rebalanceInfos);
 
+            File.WriteAllText("test.rtf", output);
             Assert.AreEqual(expectedOutput, output);
         }
 
