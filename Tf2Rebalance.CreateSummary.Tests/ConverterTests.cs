@@ -64,6 +64,7 @@ namespace Tf2Rebalance.CreateSummary.Tests
         [DataRow("tf2rebalance_attributes.example.txt", "tf2rebalance_attributes.example_summary.json")]
         [DataRow("higps.txt", "higps_summary.json")]
         [DataRow("higps_withoutClasses.txt", "higps_withoutClasses_summary.json")]
+        [DataRow("additionalFields.txt", "additionalFields_summary.json")]
         public void GroupedJson(string inputFilename, string expectedOutputFilename)
         {
             string input = File.ReadAllText(inputFilename);
@@ -75,7 +76,22 @@ namespace Tf2Rebalance.CreateSummary.Tests
             IEnumerable<RebalanceInfo> rebalanceInfos = rebalanceInfoConverter.Execute(input);
             string output = formatter.Create(rebalanceInfos);
 
-            File.WriteAllText(expectedOutputFilename, output);
+            Assert.AreEqual(expectedOutput, output);
+        }
+
+        [TestMethod]
+        [DataRow("additionalFields.txt", "additionalFields_summary_plain.json")]
+        public void Json(string inputFilename, string expectedOutputFilename)
+        {
+            string input = File.ReadAllText(inputFilename);
+            string expectedOutput = File.ReadAllText(expectedOutputFilename);
+
+            Converter rebalanceInfoConverter = new Converter(_itemInfos);
+            IRebalanceInfoFormatter formatter = new RebalanceInfoJsonFormatter();
+
+            IEnumerable<RebalanceInfo> rebalanceInfos = rebalanceInfoConverter.Execute(input);
+            string output = formatter.Create(rebalanceInfos);
+
             Assert.AreEqual(expectedOutput, output);
         }
     }

@@ -17,6 +17,7 @@ namespace Tf2Rebalance.CreateSummary
         public string itemclass { get; set; }
         public string slot { get; set; }
         public IEnumerable<RebalanceAttribute> attributes{ get; set; }
+        public Dictionary<string, string> additionalFields { get; set; }
     }
 
     public class RebalanceAttribute
@@ -80,12 +81,21 @@ namespace Tf2Rebalance.CreateSummary
                                            itemclass = NormalizeClassName(i.Class),
                                            slot      = i.Slot,
                                            attributes = node.Parent
-                                                            .Childs.Where(c => c.Name.StartsWith("attribute"))
+                                                            .Childs.Where(c => c.Name.ToLower().StartsWith("attribute"))
                                                             .Select(n => new RebalanceAttribute
                                                                          {
                                                                              id    = n.Childs.FirstOrDefault(c => c.Name == "id")?.Value,
                                                                              value = n.Childs.FirstOrDefault(c => c.Name == "value")?.Value,
-                                                                         })
+                                                                         }),
+                                           additionalFields = node.Parent
+                                                            .Childs.Where(c =>
+                                                                          {
+                                                                              var name = c.Name.ToLower();
+                                                                              return !name.StartsWith("attribute") &&
+                                                                                     name != "info"                &&
+                                                                                     name != "keepattribs";
+                                                                          })
+                                                            .ToDictionary(n => n.Name, n => n.Value),
                                 };
                             }));
 

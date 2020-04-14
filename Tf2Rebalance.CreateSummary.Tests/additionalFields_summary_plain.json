@@ -1,0 +1,20 @@
+[
+  {
+    "id": "349",
+    "name": "Sun-on-a-Stick",
+    "info": "increased dmg to people on fire by 100%",
+    "category": "Weapons",
+    "itemclass": "Scout",
+    "slot": "Melee [Slot 2]",
+    "attributes": [
+      {
+        "id": "795",
+        "value": "2"
+      }
+    ],
+    "additionalFields": {
+      "why": "because i can",
+      "rank": "bestest"
+    }
+  }
+]

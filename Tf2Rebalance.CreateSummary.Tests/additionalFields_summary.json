@@ -1,0 +1,39 @@
+{
+  "Weapons": {
+    "name": "Weapons",
+    "classes": {
+      "Scout": {
+        "name": "Scout",
+        "slots": {
+          "Melee [Slot 2]": {
+            "name": "Melee [Slot 2]",
+            "infos": [
+              {
+                "info": "increased dmg to people on fire by 100%",
+                "category": "Weapons",
+                "itemclass": "Scout",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "349",
+                    "name": "Sun-on-a-Stick"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "795",
+                    "value": "2"
+                  }
+                ],
+                "additionalFields": {
+                  "why": "because i can",
+                  "rank": "bestest"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

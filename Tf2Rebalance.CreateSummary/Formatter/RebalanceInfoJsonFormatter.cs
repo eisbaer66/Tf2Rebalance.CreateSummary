@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace Tf2Rebalance.CreateSummary.Formatter
 {
-    class RebalanceInfoJsonFormatter : IRebalanceInfoFormatter
+    public class RebalanceInfoJsonFormatter : IRebalanceInfoFormatter
     {
         public string Create(IEnumerable<RebalanceInfo> infos)
         {

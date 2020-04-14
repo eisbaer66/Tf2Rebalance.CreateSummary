@@ -24,6 +24,7 @@ namespace Tf2Rebalance.CreateSummary.Formatter
         public IEnumerable<Weapon> weapons { get; set; }
 
         public IEnumerable<Attribute> attributes { get; set; }
+        public Dictionary<string, string> additionalFields { get; set; }
     }
 
     public class Slot
@@ -86,7 +87,8 @@ namespace Tf2Rebalance.CreateSummary.Formatter
                                                                                                                                                                                               {
                                                                                                                                                                                                   id = a.id,
                                                                                                                                                                                                   value = a.value,
-                                                                                                                                                                                              })
+                                                                                                                                                                                              }),
+                                                                                                                                                 additionalFields = itemInfo.additionalFields.Count > 0 ? itemInfo.additionalFields: null,
                                                                                                                                              };
                                                                                                                                          })
                                                                                                               })

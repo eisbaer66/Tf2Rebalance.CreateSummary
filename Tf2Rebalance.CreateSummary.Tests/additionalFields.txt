@@ -1,0 +1,18 @@
+﻿"tf2rebalance_attributes"
+{	
+	"349" //Sun on a stick
+	{
+		"keepattribs" "0"
+		"info" "increased dmg to people on fire by 100%"
+		"why" "because i can"
+		"rank" "bestest"
+		"attribute1"//dmg bonus vs burning
+		{
+			"id" "795"
+			"value" "2"
+		}
+
+
+	}
+
+}
