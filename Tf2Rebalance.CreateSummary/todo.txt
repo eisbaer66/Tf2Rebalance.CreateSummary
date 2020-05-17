@@ -1,4 +1,8 @@
-﻿- definitions without info?
+﻿! .net 3.1 !
+
+- item definitions from tf2-server files
+
+- definitions without info?
 - classes
 - resolve item attributes?
 

@@ -26,6 +26,9 @@ namespace Tf2Rebalance.CreateSummary
         [Option("-f || --format", Description = "Output format: Rtf, Text, Json or GroupedJson. Defaults to Rtf")]
         public FormatterOption FormatterOption { get; set; } = FormatterOption.Rft;
 
+        [Option("-o || --output", Description = "Output directory: specify output directory for summaries. Defaults to the directory of the input-file")]
+        public string OutputDirectory { get; set; } = null;
+
         [Argument(0, Description = "Enter the filenames (i.e. tf2rebalance_attributes.txt)")]
         public IList<string> Files { get; set; }
 
@@ -67,8 +70,15 @@ namespace Tf2Rebalance.CreateSummary
             }
 
             IRebalanceInfoFormatter formatter = CreateFormatter(FormatterOption);
-            Execute(Files, formatter);
+            IFileSystem fileSystem = CreateFileSystem(formatter, OutputDirectory);
+
+            Execute(Files, formatter, fileSystem);
             return 0;
+        }
+
+        private IFileSystem CreateFileSystem(IRebalanceInfoFormatter formatter, string outputDirectory)
+        {
+            return new FileSystem(formatter, outputDirectory);
         }
 
         private static IRebalanceInfoFormatter CreateFormatter(FormatterOption option)
@@ -90,24 +100,24 @@ namespace Tf2Rebalance.CreateSummary
             }
         }
 
-        private static void Execute(IList<string> files, IRebalanceInfoFormatter formatter)
+        private static void Execute(IList<string> files, IRebalanceInfoFormatter formatter, IFileSystem fileSystem)
         {
             IDictionary<string, List<ItemInfo>> weaponNames = AlliedModsWiki.GetItemInfos();
             Converter                           converter   = new Converter(weaponNames);
 
             foreach (string filename in files)
             {
-                CreateSummary(filename, converter, formatter);
+                CreateSummary(filename, converter, formatter, fileSystem);
             }
 
             Log.Information("finished creating summaries for {ConfigFileCount} configs", files.Count);
         }
 
-        private static void CreateSummary(string filename, Converter converter, IRebalanceInfoFormatter formatter)
+        private static void CreateSummary(string filename, Converter converter, IRebalanceInfoFormatter formatter, IFileSystem fileSystem)
         {
             Log.Information("reading config from {ConfigFileName}", filename);
 
-            string input = File.ReadAllText(filename);
+            string input = fileSystem.Read(filename);
 
             IEnumerable<RebalanceInfo> rebalanceInfos = converter.Execute(input);
             string output = formatter.Create(rebalanceInfos);
@@ -117,10 +127,7 @@ namespace Tf2Rebalance.CreateSummary
                 return;
             }
 
-            string outputFilename = filename.Replace(Path.GetFileName(filename), Path.GetFileNameWithoutExtension(filename) + "_summary." + formatter.FileExtension);
-
-            Log.Information("writing summary to {SummaryFileName}", outputFilename);
-            File.WriteAllText(outputFilename, output);
+            fileSystem.WriteToOutput(filename, output);
         }
     }
 }
