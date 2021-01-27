@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Serilog;
+using Tf2Rebalance.CreateSummary.Converters;
+using Tf2Rebalance.CreateSummary.Converters.Parsers;
+using Tf2Rebalance.CreateSummary.Converters.Transformations;
+using Tf2Rebalance.CreateSummary.Domain;
 using Tf2Rebalance.CreateSummary.Formatter;
+using ValveFormat.Superpower;
 
 namespace Tf2Rebalance.CreateSummary.Tests
 {
     [TestClass]
-    public class ConverterTests
+    public class Tf2RebalanceConverterTests
     {
         private IDictionary<string, List<ItemInfo>> _itemInfos;
 
@@ -33,7 +38,9 @@ namespace Tf2Rebalance.CreateSummary.Tests
             string input = File.ReadAllText(inputFilename);
             string expectedOutput = File.ReadAllText(expectedOutputFilename);
 
-            Converter rebalanceInfoConverter = new Converter(_itemInfos);
+            IConverter rebalanceInfoConverter = new GenericConverter<Node>(new ValveFormatParser(),
+                                                                           new Tf2RebalanceTransformation(new ItemInfoSource(_itemInfos),
+                                                                                                          new ClassNameSource()));
             IRebalanceInfoFormatter formatter = new RebalanceInfoTextFormatter();
 
             IEnumerable<RebalanceInfo> rebalanceInfos = rebalanceInfoConverter.Execute(input);
@@ -52,7 +59,9 @@ namespace Tf2Rebalance.CreateSummary.Tests
             string input = File.ReadAllText(inputFilename);
             string expectedOutput = File.ReadAllText(expectedOutputFilename);
 
-            Converter rebalanceInfoConverter = new Converter(_itemInfos);
+            IConverter rebalanceInfoConverter = new GenericConverter<Node>(new ValveFormatParser(),
+                                                                           new Tf2RebalanceTransformation(new ItemInfoSource(_itemInfos),
+                                                                                                          new ClassNameSource()));
             IRebalanceInfoFormatter formatter = new RebalanceInfoRtfFormatter();
 
             IEnumerable<RebalanceInfo> rebalanceInfos = rebalanceInfoConverter.Execute(input);
@@ -72,7 +81,9 @@ namespace Tf2Rebalance.CreateSummary.Tests
             string input = File.ReadAllText(inputFilename);
             string expectedOutput = File.ReadAllText(expectedOutputFilename);
 
-            Converter rebalanceInfoConverter = new Converter(_itemInfos);
+            IConverter rebalanceInfoConverter = new GenericConverter<Node>(new ValveFormatParser(),
+                                                                           new Tf2RebalanceTransformation(new ItemInfoSource(_itemInfos),
+                                                                                                          new ClassNameSource()));
             IRebalanceInfoFormatter formatter = new RebalanceInfoGroupedJsonFormatter();
 
             IEnumerable<RebalanceInfo> rebalanceInfos = rebalanceInfoConverter.Execute(input);
@@ -88,7 +99,9 @@ namespace Tf2Rebalance.CreateSummary.Tests
             string input = File.ReadAllText(inputFilename);
             string expectedOutput = File.ReadAllText(expectedOutputFilename);
 
-            Converter rebalanceInfoConverter = new Converter(_itemInfos);
+            IConverter rebalanceInfoConverter = new GenericConverter<Node>(new ValveFormatParser(),
+                                                                           new Tf2RebalanceTransformation(new ItemInfoSource(_itemInfos),
+                                                                                                          new ClassNameSource()));
             IRebalanceInfoFormatter formatter = new RebalanceInfoJsonFormatter();
 
             IEnumerable<RebalanceInfo> rebalanceInfos = rebalanceInfoConverter.Execute(input);

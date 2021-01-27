@@ -1,0 +1,114 @@
+{
+  "Weapons": {
+    "name": "Weapons",
+    "classes": {
+      "Heavy": {
+        "name": "Heavy",
+        "slots": {
+          "Primary [Slot 0]": {
+            "name": "Primary [Slot 0]",
+            "infos": [
+              {
+                "info": "from Custom Attributes",
+                "category": "Weapons",
+                "itemclass": "Heavy",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "811",
+                    "name": "The Huo-Long Heater"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "minigun winddown boost duration",
+                    "value": "5.0"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "Soldier": {
+        "name": "Soldier",
+        "slots": {
+          "Primary [Slot 0]": {
+            "name": "Primary [Slot 0]",
+            "infos": [
+              {
+                "info": "from Custom Attributes",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Primary [Slot 0]",
+                "weapons": [
+                  {
+                    "id": "237",
+                    "name": "Rocket Jumper"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "quack on crit check",
+                    "value": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          "Melee [Slot 2]": {
+            "name": "Melee [Slot 2]",
+            "infos": [
+              {
+                "info": "from Custom Attributes",
+                "category": "Weapons",
+                "itemclass": "Soldier",
+                "slot": "Melee [Slot 2]",
+                "weapons": [
+                  {
+                    "id": "447",
+                    "name": "The Disciplinary Action"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "quack on crit check",
+                    "value": "1"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "Spy": {
+        "name": "Spy",
+        "slots": {
+          "PDA2 [Slot 4]": {
+            "name": "PDA2 [Slot 4]",
+            "infos": [
+              {
+                "info": "from Custom Attributes",
+                "category": "Weapons",
+                "itemclass": "Spy",
+                "slot": "PDA2 [Slot 4]",
+                "weapons": [
+                  {
+                    "id": "60",
+                    "name": "The Cloak and Dagger"
+                  }
+                ],
+                "attributes": [
+                  {
+                    "id": "cloak decrease",
+                    "value": "1"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

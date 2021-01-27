@@ -1,0 +1,20 @@
+﻿Weapons
+Heavy
+Primary 
+The Huo-Long Heater
+from Custom Attributes
+
+Soldier
+Primary 
+Rocket Jumper
+from Custom Attributes
+
+Melee 
+The Disciplinary Action
+from Custom Attributes
+
+Spy
+PDA2 
+The Cloak and Dagger
+from Custom Attributes
+

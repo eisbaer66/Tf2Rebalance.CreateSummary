@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Tf2Rebalance.CreateSummary.Domain;
 
 namespace Tf2Rebalance.CreateSummary.Formatter
 {

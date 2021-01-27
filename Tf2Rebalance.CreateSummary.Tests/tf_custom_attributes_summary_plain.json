@@ -1,0 +1,62 @@
+[
+  {
+    "id": "60",
+    "name": "The Cloak and Dagger",
+    "info": "from Custom Attributes",
+    "category": "Weapons",
+    "itemclass": "Spy",
+    "slot": "PDA2 [Slot 4]",
+    "attributes": [
+      {
+        "id": "cloak decrease",
+        "value": "1"
+      }
+    ],
+    "additionalFields": {}
+  },
+  {
+    "id": "237",
+    "name": "Rocket Jumper",
+    "info": "from Custom Attributes",
+    "category": "Weapons",
+    "itemclass": "Soldier",
+    "slot": "Primary [Slot 0]",
+    "attributes": [
+      {
+        "id": "quack on crit check",
+        "value": "1"
+      }
+    ],
+    "additionalFields": {}
+  },
+  {
+    "id": "447",
+    "name": "The Disciplinary Action",
+    "info": "from Custom Attributes",
+    "category": "Weapons",
+    "itemclass": "Soldier",
+    "slot": "Melee [Slot 2]",
+    "attributes": [
+      {
+        "id": "quack on crit check",
+        "value": "1"
+      }
+    ],
+    "additionalFields": {}
+  },
+  {
+    "id": "811",
+    "name": "The Huo-Long Heater",
+    "info": "from Custom Attributes",
+    "category": "Weapons",
+    "itemclass": "Heavy",
+    "slot": "Primary [Slot 0]",
+    "attributes": [
+      {
+        "id": "minigun winddown boost duration",
+        "value": "5.0"
+      }
+    ],
+    "additionalFields": {}
+  }
+]

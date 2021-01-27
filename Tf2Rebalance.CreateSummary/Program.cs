@@ -5,7 +5,12 @@ using McMaster.Extensions.CommandLineUtils;
 using Serilog;
 using Serilog.Events;
 using Serilog.Formatting.Compact;
+using Tf2Rebalance.CreateSummary.Converters;
+using Tf2Rebalance.CreateSummary.Converters.Parsers;
+using Tf2Rebalance.CreateSummary.Converters.Transformations;
+using Tf2Rebalance.CreateSummary.Domain;
 using Tf2Rebalance.CreateSummary.Formatter;
+using ValveFormat.Superpower;
 
 namespace Tf2Rebalance.CreateSummary
 {
@@ -102,8 +107,21 @@ namespace Tf2Rebalance.CreateSummary
 
         private static void Execute(IList<string> files, IRebalanceInfoFormatter formatter, IFileSystem fileSystem)
         {
-            IDictionary<string, List<ItemInfo>> weaponNames = AlliedModsWiki.GetItemInfos();
-            Converter                           converter   = new Converter(weaponNames);
+            IDictionary<string, List<ItemInfo>> weaponNames     = AlliedModsWiki.GetItemInfos();
+            var                                 itemInfoSource  = new ItemInfoSource(weaponNames);
+            var                                 classNameSource = new ClassNameSource();
+            var transformations = new Dictionary<string, ITransformation<Node>>
+                                  {
+                                      {
+                                          "tf2rebalance_attributes", new Tf2RebalanceTransformation(itemInfoSource,
+                                                                                                    classNameSource)
+                                      },
+                                      {
+                                          "Custom Attributes", new CustomAttributesTransformation(itemInfoSource,
+                                                                                                  classNameSource)
+                                      },
+                                  };
+            IConverter converter = new CompositeTf2FormatConverter(new ValveFormatParser(), transformations);
 
             foreach (string filename in files)
             {
@@ -113,14 +131,14 @@ namespace Tf2Rebalance.CreateSummary
             Log.Information("finished creating summaries for {ConfigFileCount} configs", files.Count);
         }
 
-        private static void CreateSummary(string filename, Converter converter, IRebalanceInfoFormatter formatter, IFileSystem fileSystem)
+        private static void CreateSummary(string filename, IConverter converter, IRebalanceInfoFormatter formatter, IFileSystem fileSystem)
         {
             Log.Information("reading config from {ConfigFileName}", filename);
 
             string input = fileSystem.Read(filename);
-
+            
             IEnumerable<RebalanceInfo> rebalanceInfos = converter.Execute(input);
-            string output = formatter.Create(rebalanceInfos);
+            string                     output         = formatter.Create(rebalanceInfos);
             if (string.IsNullOrEmpty(output))
             {
                 Log.Error("input could not be read skipping summary");

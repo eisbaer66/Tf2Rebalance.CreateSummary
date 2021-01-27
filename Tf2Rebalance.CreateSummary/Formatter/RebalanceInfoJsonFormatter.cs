@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
+using Tf2Rebalance.CreateSummary.Domain;
 
 namespace Tf2Rebalance.CreateSummary.Formatter
 {
