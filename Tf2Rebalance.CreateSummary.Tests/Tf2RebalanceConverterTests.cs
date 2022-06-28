@@ -66,8 +66,7 @@ namespace Tf2Rebalance.CreateSummary.Tests
 
             IEnumerable<RebalanceInfo> rebalanceInfos = rebalanceInfoConverter.Execute(input);
             string output = formatter.Create(rebalanceInfos);
-
-            File.WriteAllText("test.rtf", output);
+            
             Assert.AreEqual(expectedOutput, output);
         }
 

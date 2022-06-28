@@ -2584,34 +2584,6 @@
             ]
           }
         }
-      },
-      "Spy": {
-        "name": "Spy",
-        "slots": {
-          "Secondary [Slot 0]": {
-            "name": "Secondary [Slot 0]",
-            "infos": [
-              {
-                "info": "You can now rocketjump higher",
-                "category": "Weapons",
-                "itemclass": "Spy",
-                "slot": "Secondary [Slot 0]",
-                "weapons": [
-                  {
-                    "id": "15129",
-                    "name": "Coffin Nail"
-                  }
-                ],
-                "attributes": [
-                  {
-                    "id": "58",
-                    "value": "2"
-                  }
-                ]
-              }
-            ]
-          }
-        }
       }
     }
   }

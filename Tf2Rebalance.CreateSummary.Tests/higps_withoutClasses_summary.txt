@@ -268,8 +268,3 @@ Melee Range Increased a bit
 The Pain Train
 You now capture at 3x
 
-Spy
-Secondary 
-Coffin Nail
-You can now rocketjump higher
-
