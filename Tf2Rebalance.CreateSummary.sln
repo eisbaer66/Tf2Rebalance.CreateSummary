@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.106
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tf2Rebalance.CreateSummary", "Tf2Rebalance.CreateSummary\Tf2Rebalance.CreateSummary.csproj", "{3DEFE1BC-DD4C-49C1-94FC-F929F1CC02D2}"
 EndProject
@@ -11,7 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValveFormat.Superpower", "V
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValveFormat.Superpower.Tests", "ValveFormat.Superpower.Tests\ValveFormat.Superpower.Tests.csproj", "{6924341B-023D-4001-B27A-BF3700095058}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RtfWriter.Standard", "RtfWriter.Standard\RtfWriter.Standard.csproj", "{4A1F7183-B8EA-463A-BE1F-D7617F5BDD21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RtfWriter.Standard", "RtfWriter.Standard\RtfWriter.Standard.csproj", "{4A1F7183-B8EA-463A-BE1F-D7617F5BDD21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{4D42D1A2-5FB0-4B48-88CB-FAAF7BD31B50}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		COPYING = COPYING
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

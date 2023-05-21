@@ -42,7 +42,7 @@ namespace Tf2Rebalance.CreateSummary
             Serilog.Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Information()
                 .WriteTo.Console()
-                .WriteTo.File(new RenderedCompactJsonFormatter(), "log-.clef", restrictedToMinimumLevel: LogEventLevel.Error, rollingInterval: RollingInterval.Day, retainedFileCountLimit: 3)
+                .WriteTo.File(new RenderedCompactJsonFormatter(), "logs/log-.clef", restrictedToMinimumLevel: LogEventLevel.Error, rollingInterval: RollingInterval.Day, retainedFileCountLimit: 3)
                 .Enrich.FromLogContext()
                 .CreateLogger();
 
